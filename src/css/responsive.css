@@ -133,6 +133,10 @@
         font-size: 1rem;
     }
     
+    .modal-technical {
+        font-size: 0.85rem;
+    }
+    
     .modal-description p {
         font-size: 0.95rem;
     }

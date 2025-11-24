@@ -24,7 +24,11 @@ export async function loadArtworksFromJSON() {
                         thumbnail: artist.thumbnail || `assets/placeholder.jpg`,
                         category: floorKey,
                         description: artist.work_description,
-                        artistBio: artist.artist_bio
+                        artistBio: artist.artist_bio,
+                        medium: artist.medium,
+                        running_time: artist.running_time,
+                        dimensions: artist.dimensions,
+                        video_url: artist.video_url
                     });
                 });
             });

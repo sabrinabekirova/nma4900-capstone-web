@@ -81,7 +81,29 @@ function displayArtwork(artwork) {
     
     // Create modal content
     let mediaHTML;
-    if (artwork.type === 'video') {
+    if (artwork.video_url) {
+        // Check if it's a Vimeo URL
+        if (artwork.video_url.includes('vimeo.com')) {
+            const vimeoId = artwork.video_url.split('/').pop().split('?')[0];
+            mediaHTML = `<div class="modal-media-container">
+                <iframe class="modal-media modal-iframe" 
+                    src="https://player.vimeo.com/video/${vimeoId}?autoplay=1&loop=1" 
+                    frameborder="0" 
+                    allow="autoplay; fullscreen; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>`;
+        } else {
+            // Generic iframe for other URLs (like p5.js)
+            mediaHTML = `<div class="modal-media-container">
+                <iframe class="modal-media modal-iframe" 
+                    src="${artwork.video_url}" 
+                    frameborder="0" 
+                    allowfullscreen>
+                </iframe>
+            </div>`;
+        }
+    } else if (artwork.type === 'video') {
         mediaHTML = `<video class="modal-media" controls autoplay loop>
             <source src="${artwork.src}" type="video/mp4">
             Your browser does not support the video tag.
@@ -90,10 +112,23 @@ function displayArtwork(artwork) {
         mediaHTML = `<img class="modal-media" src="${artwork.src}" alt="${artwork.title}">`;
     }
     
+    // Determine if we show running_time or dimensions
+    let technicalInfo = '';
+    if (artwork.medium) {
+        technicalInfo += `${artwork.medium}`;
+        
+        if (artwork.running_time) {
+            technicalInfo += ` | ${artwork.running_time}`;
+        } else if (artwork.dimensions) {
+            technicalInfo += ` | ${artwork.dimensions}`;
+        }
+    }
+    
     modalBody.innerHTML = `
         ${mediaHTML}
         <h2 class="modal-title">${artwork.title}</h2>
         <p class="modal-artist">by ${artwork.artist}</p>
+        ${technicalInfo ? `<p class="modal-technical">${technicalInfo}</p>` : ''}
         
         <div class="modal-description">
             <h3>About the Work</h3>

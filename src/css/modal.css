@@ -146,6 +146,25 @@
     margin-bottom: var(--spacing-md);
 }
 
+.modal-media-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 75%; /* Taller aspect ratio for full page viewing */
+    margin-bottom: var(--spacing-md);
+    background: rgba(0, 0, 0, 0.2);
+    min-height: 600px;
+}
+
+.modal-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: none;
+    border: none;
+}
+
 .modal-title {
     font-family: var(--font-primary);
     font-size: 2rem;
@@ -158,7 +177,15 @@
     font-family: var(--font-primary);
     font-size: 1.2rem;
     color: #ffffff;
+    margin-bottom: var(--spacing-xs);
+}
+
+.modal-technical {
+    font-family: var(--font-primary);
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
     margin-bottom: var(--spacing-md);
+    font-style: italic;
 }
 
 .modal-description {
