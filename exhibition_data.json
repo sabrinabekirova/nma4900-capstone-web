@@ -9,7 +9,7 @@
           {
             "artist_name": "Anne Chen",
             "work_title": "Outcasted",
-            "thumbnail": "assets/thumbnails/Home/Outcasted_Anne.jpg",
+            "thumbnail": "assets/thumbnails/home/Outcasted_Anne.jpg",
             "medium": "Video",
             "running_time": "XX:XX",
             "work_description": "<i>Outcasted</i>, a video by Anne Chen offers the artist's reflection on her identity as a Chinese American. Chen speaks to her mom about her experience first moving to the U.S and delves deeper into her culture, dissecting the differences between American and Chinese culture. The narration goes back and forth between Chen and her mother, offering different perspectives on identity and what it means to be a part of two different cultures. The artist's family is originally from a province in Guangdong where they speak Taishenese, a dying dialect. Chen details her experience on this disparity and what that means for her as she grew up American. This background provides a perspective of how she chooses to embrace all parts of her identity that shape who she is. <i>Outcasted</i>, is a powerful and moving work that depicts Chen's journey on having a third culture and balancing both of her identities. We see life through her lens, understanding the emotional disconnect and sense of belonging that comes with finding yourself in between two cultures. Her work centers family and how language and culture are intertwined and shape who we are. <i>Outcasted</i> forces you to look within yourself and understand how culture defines you.",
@@ -18,7 +18,7 @@
           {
             "artist_name": "Elvia Gonzalez",
             "work_title": "If You Love it, Let it Go",
-            "thumbnail": "assets/thumbnails/Home/If You Love it, Let it Go_Elvia.png",
+            "thumbnail": "assets/thumbnails/home/If You Love it, Let it Go_Elvia.png",
             "medium": "Animation",
             "running_time": "XX:XX",
             "work_description": "Elvia Gonzalez's <i>If You Love it, Let it Go</i> explores themes of culture, family, and memory through the lens of her Salvadoran heritage. In this animated video, Gonzalez combines hand drawn and digital elements through pictures and videos to tell a story about the deep relationship between people, land, and survival in El Salvador. The piece reflects on how agriculture not only sustains families, but also connects generations and tradition. This work demonstrates how the land and people are constantly affecting each other. Using a mixture of animation, video, and photographic imagery, Gonzalez constructs a layered visual narrative that honors the experiences of her grandparents and the rural communities that depend on the land. In her video animation, Gonzalez combines hand-drawn and digital elements such as photographs and video footage to tell a story about migration, identity, and belonging. She explains that the main focus of her project is the journey many people take to come to the United States.She draws inspiration from her own family's experiences, Gonzalez shares that her parents immigrated to the U.S. making this story very personal. The work reflects on the emotional and physical transitions that come with leaving a home to start a new one in a different country that can be very hard for families and individuals. Gonzalez creates a work that not only honors Salvadoran culture but also captures the universal experience of migration, memory, and transformation.",
@@ -36,7 +36,7 @@
           {
             "artist_name": "Citlali Hernandez",
             "work_title": "Nadamas Un Cafecito Más",
-            "thumbnail": "assets/thumbnails/Home/Nada mas un cafecito mas_ Citlali Hernandez.png",
+            "thumbnail": "assets/thumbnails/home/Nada mas un cafecito mas_ Citlali Hernandez.png",
             "medium": "Animation",
             "running_time": "XX:XX",
             "work_description": "<i>Nadamas Un Cafecito Más</i>, a short animation and an accompanying zine by Citlali Hernandez, explores themes of memory, cultural heritage, and emotional continuity. It invites viewers into an intimate ritual of sharing coffee with family members as a way to strengthen familial bonds. It gently guides viewers through a series of warm and reflective moments of a girl enjoying a cup of coffee multiple times with her family, a simple yet meaningful act, which allows her time to connect with others. As the scenes progress, viewers witness the continuity of tradition and love that binds generations together, culminating in a tender moment on Día de Muertos when the artist's late grandfather's picture appears on the ofrenda (an altar for Día de Muertos). The soft jazz soundtrack, performed by Hernandez's younger brother, further deepens the nostalgic tone while paying homage to her grandfather's musical tastes. The animation is rich with sentimental details and familiar textures. The comfort of a warm cup of coffee evokes a sense of nostalgia, home, and belonging. Un Cafecito Más, meaning one more coffee, symbolizes the continuation of these rituals, love, and memory, reminding us that these acts can bind us together across generations, even beyond loss.",
@@ -45,16 +45,17 @@
           {
             "artist_name": "Jiaqi Liu",
             "work_title": "Traces",
-            "thumbnail": "assets/thumbnails/Home/Traces_Jiaqi.png",
-            "medium": "Animation",
-            "running_time": "XX:XX",
+            "thumbnail": "assets/thumbnails/home/Traces_Jiaqi.png",
+            "medium": "Interactive Digital Art",
+            "dimensions": "Web-based",
+            "video_url": "https://editor.p5js.org/jiaqiliu36/full/tgKorBt7C",
             "work_description": "<i>Traces</i> is an interactive artwork by Jiaqi Liu that conveys the feeling of remembering those you miss. The digital piece features edited images and contemplative statements. Together, these create an introspective dialogue between the project, the viewer, and the values they hold. Missing someone is a universal feeling that asks us to consider who is important to us. The digital piece shows a blue image with blurred white text. It then offers a prompt asking, \"Who are you missing at this moment?\" and provides a text box for an answer. When you respond, a visual reminiscent of rain trickles down the screen, revealing the obscured white text. The dewy imagery becomes more visible, eventually unveiling a complete text written in Mandarin. The blue text, initially hidden, urges the user to dive deeper into the artwork to uncover it. As the screen clears, it symbolizes the user opening up. The piece ends with pensive and wistful statements about how time is fleeting and moves forward regardless. Despite this, we can hold onto our loved ones' memories and their traces in our lives.",
             "artist_bio": "Jiaqi Liu is a Chinese artist from New York City. She seeks to explore the relationship we have with others and their memory. Inspired by her own familial bonds, Liu also cites a quote, \"Rain is the fireworks of the angel\", which she incorporates this into her work. This wistful piece helps us find comfort and solace in our relationships with others."
           },
           {
             "artist_name": "Evelyn Vasquez",
             "work_title": "White Eyes of Identity",
-            "thumbnail": "assets/thumbnails/Home/White Eyes of Identity.png",
+            "thumbnail": "assets/thumbnails/home/White Eyes of Identity.png",
             "medium": "Video",
             "running_time": "XX:XX",
             "work_description": "In the <i>White Eyes of Identity</i>, Evelyn Vasquez explores the complex intersections of memory, migration, and cultural belonging. The video opens tenderly with the sound of a lullaby and a fleeting image of a baby's hand grasping a mother's finger, evoking warmth and intergenerational connection. Through this sequence, Vasquez pays homage to her mother's journey of leaving her home country to begin anew in the United States, carrying little more than memories and resilience. Narrated by Vasquez herself, the video's reflective voices add a deeply personal layer to the work. As the narrative unfolds, symbolic imagery of \"white eyes\" and fragmented facial expressions suggests the uneasy balance between visibility and erasure within cultural identity. The white eyes become a haunting metaphor for feeling both seen and unseen, recognized by others yet alienated within one's own reflection. This duality underscores Vasquez's ongoing search for belonging between two cultures where the boundaries of language, heritage, and perception continuously blur. By using symbolism and rhythm to reveal how identity shifts through memory and gaze, Vasquez questions what it means to reclaim one's sense of self amid displacement, offering a poetic meditation on how love, loss, and cultural hybridity shape who we become. In <i>White Eyes of Identity</i>, Vasquez draws direct inspiration from filmmaker Chris Marker's canonical film Sans Soleil, as well as new media artist Mirae hers RHEE's work The Corean which was premiered at the New Media Artspace in 2021.",
@@ -70,7 +71,7 @@
           {
             "artist_name": "Steven Cen",
             "work_title": "Machine View",
-            "thumbnail": "assets/thumbnails/placeholder.jpg",
+            "thumbnail": "assets/placeholder.jpg",
             "medium": "Video",
             "running_time": "XX:XX",
             "work_description": "<i>Machine View</i>, a video by Steven Cen, explores how machines see humanity through the lens. Cen uses surveillance footage from security cameras to examine how machine streams of data are used to fragment and redefine human presence. As seen through the point of view of a camera, pedestrians walking past are detected, recognized, and categorized by placing a red box and labeling them as humans. Ultimately, it reduces the human presence to just a stream of code recognition. What starts as observation evolves into a digital translation process where identity becomes data. Throughout the video, <i>Machine View</i> encourages the viewer to contemplate how human presence is simply converted into data within everything we do. Cen's work not only emphasizes how often we are being watched, but also how the human body is being converted into information. These technological systems have already observed, perceived, and stored the data. By showcasing this process, Cen can expose the tension between presence, control, connection, and loss. The video's blurry features and gloomy environment highlight the limit of recognition from a machine's point of view. This encourages the viewer to contemplate what it means to be recognized in a time of constant surveillance.",
@@ -79,7 +80,7 @@
           {
             "artist_name": "Yanyun Chen",
             "work_title": "Information Cocoon",
-            "thumbnail": "assets/thumbnails/Control/Yanyun - Information Cocoon.png",
+            "thumbnail": "assets/thumbnails/control/Yanyun - Information Cocoon.png",
             "medium": "Animation",
             "running_time": "XX:XX",
             "work_description": "<i>Information Cocoon</i>, an animated video by Yanyun Chen, explores the effects of social media on a person's mind. Social media was created to allow people to easily connect with others, share ideas, and build communities. Over time, social media has evolved into so much more. Chen illustrates how addictive social media can be, and how its algorithms are intentionally designed to make users develop unhealthy habits. In this piece, we follow a user who slowly becomes addicted and develops a dependency on social media, as it gradually eats away at his mind. In this artwork, Chen draws parallels between literal cocoons and the nature of addictive technology. Just as insects can become trapped inside cocoons, people can be consumed by social media. Users are fed information that reinforces their existing beliefs based on the type of content they engage with, causing their thoughts to become woven and entrapped in a hivemind, unable and unwilling to see other perspectives. Chen depicts the user liking a post, and is subsequently overwhelmed by posts of the same nature.",
@@ -88,7 +89,7 @@
           {
             "artist_name": "Justine Cheng",
             "work_title": "Obsession Over Control",
-            "thumbnail": "assets/thumbnails/placeholder.jpg",
+            "thumbnail": "assets/placeholder.jpg",
             "medium": "Animation",
             "running_time": "XX:XX",
             "work_description": "The work <i>Obsession Over Control</i> by Justine Cheng explores how life is like a game where its players are constantly being observed, stimulated, and manipulated. The game maker is portrayed as a wealthy, greedy individual wearing an expensive watch and suit, who overlooks the city and meticulously controls the players' lives. Several eyes are laid across the board, serving as surveillance to watch the player's every move and manipulate them into the gamemaker's favor. The pathway created in this game is both unfair and unclear, as it is modified in a way that ensures players are playing into his hands. In reality, the players represent people who are always chasing something that is out of their reach, almost as if they have become obsessed over it without knowing the reason. Materialism and overconsumption to achieve momentarily happiness soon consumes their life, turning them into a puppet played by society that takes advantage of them and feeds onto their insecurities. People will soon begin to question themselves: Is this a want or a need? Is this the true meaning of happiness?",
@@ -97,7 +98,7 @@
           {
             "artist_name": "Amit Dhar",
             "work_title": "Choices",
-            "thumbnail": "assets/thumbnails/placeholder.jpg",
+            "thumbnail": "assets/placeholder.jpg",
             "medium": "Video",
             "running_time": "XX:XX",
             "work_description": "<i>Choices</i>, a video by Amit Dhar, explains the background behind why people join gangs and how this affects their communities. Some of the main points in his piece involve paying homage to the community, comparing gun violence in his community to the Bronx to violence elsewhere. Dhar is interested in rehabilitation projects for those involved in gun violence and how community mentorship can prevent the youth from involvement in crime. Dhar conveys these ideas through voiceovers and multiple clips from news stations and interviews with former gang members. Utilizing various clips, Dhar presents statistics highlighting the increasing number of youth joining gangs and transitions to ex-gang members discussing how race, culture, and financial struggles contribute to this issue.",
@@ -106,7 +107,7 @@
           {
             "artist_name": "Bryan Lai",
             "work_title": "American Nightmare",
-            "thumbnail": "assets/thumbnails/Control/American Nightmare_Bryan.png",
+            "thumbnail": "assets/thumbnails/control/American Nightmare_Bryan.png",
             "medium": "Video",
             "running_time": "XX:XX",
             "work_description": "<i>American Nightmare</i>, a video work by Bryan Lai, offers the artist's reflection on what the \"American Dream\" has turned into. The piece takes a closer look at how ordinary people feel trapped in a system built to benefit the few at the top. Politicians seem to push legislation that actively works against the working class. Yet despite constant effort, many still face rising living costs, limited healthcare and workers' benefits, and jobs being replaced by AI. Lai focuses on exposing how deeply divided the country has become. For the working class, success feels less like a dream and more like survival, whereas the elite enjoy endless privilege, security, and influence. The video uses clips from politics and media and mixes it with humor to highlight the gap of how America portrays itself, versus how the average American citizen experiences everyday life. Lai wants viewers to think about the difference between the working class and the elites, and how the idea of the \"American Dream\" may just be an illusion for many people today. Additionally there's a question of whether choice is also an illusion within the system's structure.",
@@ -115,7 +116,7 @@
           {
             "artist_name": "Liana Zou",
             "work_title": "Under the Surface",
-            "thumbnail": "assets/thumbnails/Control/Under The Surface_Liana.jpg",
+            "thumbnail": "assets/thumbnails/control/Under The Surface_Liana.jpg",
             "medium": "Digital Photography",
             "dimensions": "Needed",
             "work_description": "Under The Surface is a sequence of photographs by Liana Zou which shows how low income workers, despite being in the face of communities, are hardly ever recognized. Zou uses a series of photos she captured in Flushing Queens showing members of a Chinese community. She highlights how street vendors, butchers, restaurant workers, etc., are treated as an invisible existence like an extra, or background performer, despite being the very backbone of their communities. In some photographs Zou took shows lively colors, from the sun hitting different fruits, to the vibrant red text shown on signs. This represents good fortune, celebration, vitality, and success in Chinese culture. In others, the black and white images emphasize the expression of each person and the conditions that they are all in. Zou uses a combination of documentary realism, zooming, social invisibility, authentic moments, and color. <i>Under the Surface</i> isn't just a sequence of photographs, it's a tribute of recognition to all the hardworking low-income workers who are underappreciated, unrecognized, and keep our communities and city alive and flowing. Zou wants you to take a moment to challenge yourselves and defy social invisibility as she captures moments of those who are ignored everyday.",
@@ -131,7 +132,7 @@
           {
             "artist_name": "Abeha Choudhry",
             "work_title": "Not Just Right",
-            "thumbnail": "assets/thumbnails/placeholder.jpg",
+            "thumbnail": "assets/placeholder.jpg",
             "medium": "Needed",
             "dimensions": "Needed",
             "work_description": "In <i>Not Just Right</i>, an animation by Abeha Choudhry, a bear experiences the consequences of global warming. The story is a twist on the classic tale of \"Goldilocks.\" It unfolds with the bear waking up early due to the unusually warm temperatures from an ongoing forest fire. The bear has a difficult time finding food for sustenance, which leads it to come into contact with humans. Instead of a person breaking into the bear's house, like in \"Goldilocks,\" this bear broke into a human's cabin. A young child's voice narrates the unfolding events in the story, calling to question the innocence of this childlike narrative. The animation represents themes of vulnerability, disruption, and the consequences of climate change. It also highlights the impact of climate change on animals and their habitats, as well as the relationship between humans and their natural world. As Choudhry notes, the combination of story, visuals, and sound all work together to highlight the importance of noticing changes in the world. These elements foster resilience, curiosity, and motivation to take action and create positive impact.",
@@ -140,7 +141,7 @@
           {
             "artist_name": "Mary Ford",
             "work_title": "Ages in Pages",
-            "thumbnail": "assets/thumbnails/Shift/Ages In Pages_Mary.png",
+            "thumbnail": "assets/thumbnails/shift/Ages In Pages_Mary.png",
             "medium": "Animation",
             "running_time": "XX:XX",
             "work_description": "<i>Ages in Pages</i> is a hand-drawn animation created by artist Mary Ford. It explores her self evolution through motion, memory, and artistic growth. In the video, Ford sketches her past selves as cartoon characters in her sketchbook. They are vivid and are seen smiling and waving at each other from different times and spaces. Each old drawing in the background is like a time capsule, representing her interests, things that are significant to her, and cherished memories since her childhood. Ford features her favorite cartoon characters and the friends and family who have always supported and encouraged her. Finally the scene shifts to reality, yet the tiny cartoon versions of herself still surround her, conversing with each other and establishing a connection between her past and present identities. Through these encounters, Ford reflects on how artistic style mirrors emotional and personal development.",
@@ -158,7 +159,7 @@
           {
             "artist_name": "Andri Xu Wu",
             "work_title": "Anxiety",
-            "thumbnail": "assets/thumbnails/Shift/Anxiety_Andri.png",
+            "thumbnail": "assets/thumbnails/shift/Anxiety_Andri.png",
             "medium": "Video",
             "running_time": "XX:XX",
             "work_description": "<i>Anxiety</i>, a video by Andri Xu Wu, explores what it feels like to deal with academic pressure and the frustration of working hard but still falling short. The video follows a student studying for an exam, receiving a failing grade, and trying to cope with the disappointment that follows. Through phone screens, text messages, and real-life moments, the piece shows how technology can both help us connect and exacerbate our stress. The messages between the artist and his mother capture how emotions such as guilt, fear, and frustration, often get compressed into brief digital conversations. Wu uses digital storytelling and everyday technology to express emotion and tension. The second half of the video shows the artist turning that stress into motivation by going to the gym. This shift represents growth and the process of rebuilding confidence. The piece invites viewers to think about their own relationship with pressure and success. By showing small, honest moments, it reminds us that failure is part of being human and that progress can come quietly, through effort and self-reflection. In the end, <i>Anxiety</i> suggests that failure isn't the end; it's part of learning how to take back control, find balance, and keep going.",
@@ -167,7 +168,7 @@
           {
             "artist_name": "Jhonny Xu Wu",
             "work_title": "Learning to Be Rejected",
-            "thumbnail": "assets/thumbnails/Shift/Learn to be Rejected_Jhonny.png",
+            "thumbnail": "assets/thumbnails/shift/Learn to be Rejected_Jhonny.png",
             "medium": "Video",
             "running_time": "XX:XX",
             "work_description": "<i>Learning to Be Rejected</i>, by Jhonny Xu Wu, is a video that explores the experience of learning to accept rejection. The video employs identical standardized email structures; though these emails are written in a very professional, almost robotic way, they still have a severe emotional impact. Wu expresses his dissatisfaction with not being accepted into an internship. Although discouraged, he knows he is not alone, as many college students like him go through the same thing. He interviews these students, expressing shared feelings, emotions, and experiences about rejection. Wu's overall concept is that technology can evoke emotional responses through its automated processes, which often use unemotional language. Narrated by Wu himself, the video aims to help viewers understand and experience the emotions of rejection, whether they are emotional or not. Through interview interactions, it allows someone to share their own experience and connect with others. Wu prioritizes monitoring emotional responses over physical ones. The repeated rejection emails highlight the significant impact technology can have on an individual's emotions and play a major role in job applications. Sometimes employers reject without letting applicants know the reason. Ultimately, students learn to accept rejection and move forward.",
@@ -183,7 +184,7 @@
           {
             "artist_name": "Sabrina Bekirova",
             "work_title": "Hold Still",
-            "thumbnail": "assets/thumbnails/Return/HoldStill_Sabrina.png",
+            "thumbnail": "assets/thumbnails/return/HoldStill_Sabrina.png",
             "medium": "Video",
             "running_time": "XX:XX",
             "work_description": "<i>Hold Still</i>, a short film by multimedia artist Sabrina Bekirova, takes viewers into an intensely personal digital diary made of authentic vlog-style video. The film is arranged like journal entries ordered by date. It transitions through moments of happiness, stillness, and quiet contemplation— capturing life in its organic form from the vantage of the artist, rather than depicting a decided narrative. The mode of the piece captures the rhythm of memory, dispatching memories that are candid, incoherent, and intimate. Framed as though we were watching footage streamed through a camera screen, the video does not fill the entire screen, mimicking the experience of scrolling through footage on your camera roll. Each click or transition signals a changed moment in time, juxtaposing flickers of experience from life itself. There is no voiceover, only ambient sound, pace, and sequencing that tell the story, generating an intimate portrait of quotidian life experienced through digital memory, aided by the instruments we use to parse memory and experience. A ladybug appears multiple times throughout the film—serving as both a visual that connects various clips, as well as a reminder of small coincidences, gentle humor, and a playful attitude towards digital media. In our world of digital media that can feel far away, inhuman, or performative, <i>Hold Still</i> dives into sincerity, presence, and an emotional presence that goes unnoticed.",
@@ -192,7 +193,7 @@
           {
             "artist_name": "Rashel Carrillo",
             "work_title": "Collected Memories",
-            "thumbnail": "assets/thumbnails/Return/Collected memories.jpg",
+            "thumbnail": "assets/thumbnails/return/Collected memories.jpg",
             "medium": "Video",
             "running_time": "XX:XX",
             "work_description": "Rashel Carrillo's <i>Collected Memories</i> invites viewers into an intimate, first-person view of her daily life through a series of photographs and short video clips that blur the line between documentation and self-expression. The work begins with a vivid and playful scene of donuts, a visual that sets the tone for the vibrant color palette that threads throughout the piece. Carrillo details her moments with an assortment of entertaining colors and energetic edits to transform a mundane act like grocery shopping into an intriguing visual journey. The artist invites the viewer to see through her eyes, displaying a curious, observant, and joyous attitude in discovering meaning within the mundane of everyday life. Through alternating perspectives, including close-ups, wide shots, and first-person angles, Carrillo captures both the immediacy of her experience and the mundane in her surroundings. Her deliberate framing and animated editing create an energetic rhythm that mirrors life's spontaneity. The use of colorful drawings layered onto stills of everyday footage illustrate a dreamlike quality that utilizes a casually playful imagination. Through the combination of these elements, <i>Collected Memories</i> displays a celebration of regular moments and reveals the beauty in the ordinary.",
@@ -201,7 +202,7 @@
           {
             "artist_name": "Lulu O'Rourke-Chisholm",
             "work_title": "Fall '25",
-            "thumbnail": "assets/thumbnails/Return/Fall _25_Lulu.jpg",
+            "thumbnail": "assets/thumbnails/return/Fall _25_Lulu.jpg",
             "medium": "Animation",
             "running_time": "XX:XX",
             "work_description": "<i>Fall '25</i> is a stop-motion animation by Lulu O'Rourke-Chisholm that turns everyday videos into a flickering sequence of memories. The short film arranges personal videos broken down into snapshots, from friends at a concert, a birthday celebration, and late-night snapshots, into a moving collage. Layered with drawings, colorful outlines, and sparkling shapes that animate over the photographs, this adds a colorful and handmade quality. The result is a piece that feels like a memory in motion: imperfect, fast, bright, and emotional. Rather than presenting the images as still documentation, O'Rourke-Chisholm emphasizes the feeling of being there. Swirling marks, shifting frames, and rapid pacing mimic how the mind remembers not just what happened, but also how it felt. Physical textures and digital edits combine to create an almost scrapbook-like atmosphere. As each frame flashes by, the viewer experiences the joy, energy, and nostalgia of moments that were once ordinary, yet carry a personal meaning. <i>Fall '25</i> is not only a record of events; it is a reminder of the warmth we feel inside our memories, which takes us back to when it happened and lets us relive the moment.",
@@ -210,7 +211,7 @@
           {
             "artist_name": "Syeda Saima",
             "work_title": "Love in All Forms",
-            "thumbnail": "assets/thumbnails/placeholder.jpg",
+            "thumbnail": "assets/placeholder.jpg",
             "medium": "Needed",
             "dimensions": "Needed",
             "work_description": "<i>Love in All Forms</i>, a video by Syeda Saima, captures the beauty of connection through moments of friendship, family, and self-reflection. The video opens with a warm conversation among friends, showing the comfort of being surrounded by people who truly understand you. Next we see a trip of the artist visiting her grandparents, where family connection becomes a source of grounding and care. The video closes with a peaceful moment in nature where Saima sits in silence, reflecting on the bonds that shape who we are. Through soft lighting, gentle pacing, and sincere emotion, Saima reveals that love doesn't always need to be spoken; sometimes it's felt in presence, memory, and stillness. <i>Love in All Forms</i> invites viewers to appreciate the small yet powerful moments that remind us we are loved and that we are never truly alone. <i>Love in All Forms</i> shows that love isn't about getting likes or views, it's about real feelings and moments. It teaches that love should be felt, not turned into online content. It also reminds us that the internet often decides what we see, but real life happens outside the screen. The video encourages everyone to slow down, appreciate the people around them, and remember that love is found in simple, everyday moments.",
@@ -219,7 +220,7 @@
           {
             "artist_name": "Karina Sarmiento",
             "work_title": "Everything Matters",
-            "thumbnail": "assets/thumbnails/Return/Everything Matters_Karina Sarmiento.png",
+            "thumbnail": "assets/thumbnails/return/Everything Matters_Karina Sarmiento.png",
             "medium": "Video",
             "running_time": "XX:XX",
             "work_description": "In <i>Everything Matters</i>, Karina Sarmiento explores self-discovery and feelings of loneliness through a video medium. The footage is presented in a personal diary format to examine the experience of observing life from a distance. Sarmiento demonstrates how filmmaking enables her to understand her inner self. The camera serves as both a protective barrier and a transparent pane, allowing her to conceal herself while gaining deeper self-awareness. It observes each scene with attention and compassion, demonstrating how every brief moment contains essential value. Over time, the artist learns putting herself in frame is not so intimidating, and attempts to put herself out there. <i>Everything Matters</i> presents an alternative perspective about sensitivity through its authentic and emotional approach, proving how being sensitive does not indicate weakness. Sarmiento demonstrates how being attentive and experiencing deep emotions such as loss, vulnerability, and reflection, enables people to establish meaningful connections with others. <i>Everything Matters</i> presents an authentic perspective which motivates viewers to experience life at a slower pace while listening to their inner selves. By doing so, we may understand that all perceived and felt experiences matter regardless of their size.",
