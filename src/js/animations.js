@@ -23,6 +23,32 @@ export function setupSlideAnimations() {
         section.classList.add('slide-in');
         observer.observe(section);
     });
+    
+    // Setup section tracking observer
+    setupSectionTracking();
+}
+
+// Track which section is currently in view
+function setupSectionTracking() {
+    const trackingOptions = {
+        threshold: 0.5,
+        rootMargin: '0px'
+    };
+    
+    const trackingObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const sectionIndex = sections.indexOf(entry.target);
+                if (sectionIndex !== -1) {
+                    setCurrentSectionIndex(sectionIndex);
+                }
+            }
+        });
+    }, trackingOptions);
+    
+    sections.forEach(section => {
+        trackingObserver.observe(section);
+    });
 }
 
 // Scroll to specific section
