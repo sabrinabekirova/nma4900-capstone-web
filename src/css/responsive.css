@@ -87,6 +87,12 @@
         width: 280px;
     }
     
+    .gallery-container {
+        height: auto;
+        overflow-y: auto;
+        padding: var(--spacing-sm);
+    }
+    
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: var(--spacing-md);
@@ -187,6 +193,12 @@
     
     .floor-icons-vertical .key-svg {
         width: 60px;
+    }
+    
+    .gallery-container {
+        height: auto;
+        overflow-y: auto;
+        padding: var(--spacing-sm);
     }
     
     .gallery-grid {

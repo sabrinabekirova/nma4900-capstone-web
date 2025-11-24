@@ -21,9 +21,10 @@
 
 .modal.active {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     padding: var(--spacing-md);
+    padding-top: 60px;
 }
 
 .modal-content {
