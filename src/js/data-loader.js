@@ -39,7 +39,7 @@ export async function loadArtworksFromJSON() {
         
         return true;
     } catch (error) {
-        console.error('Error loading exhibition_data.json:', error);
+        console.error('Could not load!', error);
         alert('Unable to load exhibition data. Please check that exhibition_data.json exists.');
         return false;
     }
