@@ -9,7 +9,7 @@
           {
             "artist_name": "Anne Chen",
             "work_title": "Outcasted",
-            "thumbnail": "assets/thumbnails/outcasted.jpg",
+            "thumbnail": "assets/thumbnails/Home/Outcasted_Anne.jpg",
             "medium": "Video",
             "running_time": "XX:XX",
             "work_description": "<i>Outcasted</i>, a video by Anne Chen offers the artist's reflection on her identity as a Chinese American. Chen speaks to her mom about her experience first moving to the U.S and delves deeper into her culture, dissecting the differences between American and Chinese culture. The narration goes back and forth between Chen and her mother, offering different perspectives on identity and what it means to be a part of two different cultures. The artist's family is originally from a province in Guangdong where they speak Taishenese, a dying dialect. Chen details her experience on this disparity and what that means for her as she grew up American. This background provides a perspective of how she chooses to embrace all parts of her identity that shape who she is. <i>Outcasted</i>, is a powerful and moving work that depicts Chen's journey on having a third culture and balancing both of her identities. We see life through her lens, understanding the emotional disconnect and sense of belonging that comes with finding yourself in between two cultures. Her work centers family and how language and culture are intertwined and shape who we are. <i>Outcasted</i> forces you to look within yourself and understand how culture defines you.",
@@ -46,9 +46,8 @@
             "artist_name": "Jiaqi Liu",
             "work_title": "Traces",
             "thumbnail": "assets/thumbnails/Home/Traces_Jiaqi.png",
-            "medium": "Interactive Digital Art",
-            "dimensions": "Web-based",
-            "video_url": "https://editor.p5js.org/jiaqiliu36/full/tgKorBt7C",
+            "medium": "Animation",
+            "running_time": "XX:XX",
             "work_description": "<i>Traces</i> is an interactive artwork by Jiaqi Liu that conveys the feeling of remembering those you miss. The digital piece features edited images and contemplative statements. Together, these create an introspective dialogue between the project, the viewer, and the values they hold. Missing someone is a universal feeling that asks us to consider who is important to us. The digital piece shows a blue image with blurred white text. It then offers a prompt asking, \"Who are you missing at this moment?\" and provides a text box for an answer. When you respond, a visual reminiscent of rain trickles down the screen, revealing the obscured white text. The dewy imagery becomes more visible, eventually unveiling a complete text written in Mandarin. The blue text, initially hidden, urges the user to dive deeper into the artwork to uncover it. As the screen clears, it symbolizes the user opening up. The piece ends with pensive and wistful statements about how time is fleeting and moves forward regardless. Despite this, we can hold onto our loved ones' memories and their traces in our lives.",
             "artist_bio": "Jiaqi Liu is a Chinese artist from New York City. She seeks to explore the relationship we have with others and their memory. Inspired by her own familial bonds, Liu also cites a quote, \"Rain is the fireworks of the angel\", which she incorporates this into her work. This wistful piece helps us find comfort and solace in our relationships with others."
           },
@@ -150,8 +149,8 @@
           {
             "artist_name": "Pinky Sarway",
             "work_title": "Wild Cards",
-            "thumbnail": "assets/thumbnails/placeholder.jpg",
-            "medium": "Needed",
+            "thumbnail": "assets/thumbnails/shift/wildcards_pinky.png",
+            "medium": "Digital Design",
             "dimensions": "Needed",
             "work_description": "<i>Wild Cards</i>, a series of digital posters by Pinky Sarway, explores the theme of losing our sparks of imagination, individuality, and curiosity when entering adulthood. Each piece works together to capture the emotional transformation that many of us go through as we start focusing on the societal pressure that comes with age. One poster in the series, depicts gray shadows of children's profiles and is shown in front of a background of vibrant colors. As children, dreams seemed just a reach. Using our imaginations anything seemed possible, but as we come of age we are left with the reality that we were never really that close. In another poster, those possibilities become three doors that determine our future path, each with their own expectations and responsibilities. Lastly the final poster shows a tree with a pair of shattered glasses which brings together the idea that our way of seeing the world changes. Our once vivid imaginations become a fractured and lost pair of glasses and at the end, this life we live becomes scripted routines. Pinky Sarway's piece reflects the path she is currently taking. In her senior year of college Sarway is left with the bittersweet reality check that she is graduating. Now she has to enter the next steps of life –the job market– a place where fitting into a job description is more important than finding what she really wants to do. As we follow Sarway's work the question is: If imagination fades with age, are we truly growing, or merely forgetting who we are?",
             "artist_bio": "Pinky Sarway's piece reflects the path she is currently taking. In her senior year of college Sarway is left with the bittersweet reality check that she is graduating. Now she has to enter the next steps of life –the job market– a place where fitting into a job description is more important than finding what she really wants to do."
@@ -193,8 +192,8 @@
           {
             "artist_name": "Rashel Carrillo",
             "work_title": "Collected Memories",
-            "thumbnail": "assets/thumbnails/placeholder.jpg",
-            "medium": "video",
+            "thumbnail": "assets/thumbnails/Return/Collected memories.jpg",
+            "medium": "Video",
             "running_time": "XX:XX",
             "work_description": "Rashel Carrillo's <i>Collected Memories</i> invites viewers into an intimate, first-person view of her daily life through a series of photographs and short video clips that blur the line between documentation and self-expression. The work begins with a vivid and playful scene of donuts, a visual that sets the tone for the vibrant color palette that threads throughout the piece. Carrillo details her moments with an assortment of entertaining colors and energetic edits to transform a mundane act like grocery shopping into an intriguing visual journey. The artist invites the viewer to see through her eyes, displaying a curious, observant, and joyous attitude in discovering meaning within the mundane of everyday life. Through alternating perspectives, including close-ups, wide shots, and first-person angles, Carrillo captures both the immediacy of her experience and the mundane in her surroundings. Her deliberate framing and animated editing create an energetic rhythm that mirrors life's spontaneity. The use of colorful drawings layered onto stills of everyday footage illustrate a dreamlike quality that utilizes a casually playful imagination. Through the combination of these elements, <i>Collected Memories</i> displays a celebration of regular moments and reveals the beauty in the ordinary.",
             "artist_bio": "Rashel Carrillo, born and raised in Bronx, NY, is a twenty-two year old college student at Baruch College majoring in Corporate Communication and minoring in New Media Arts. She explores multiple digital mediums such as animation, video, and photography. The excitement of the unknown and bringing art to life inspires her and her creations."
