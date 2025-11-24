@@ -35,18 +35,24 @@ export function scrollToSection(index) {
 
 // Keyboard navigation handler
 export function handleKeyboardNavigation(e) {
-    // Check if modal is active
-    const modalActive = document.getElementById('artwork-modal').classList.contains('active');
+    // Check if any modal is active
+    const artworkModalActive = document.getElementById('artwork-modal')?.classList.contains('active');
+    const welcomeModalActive = document.getElementById('welcome-modal')?.classList.contains('active');
     
-    if (modalActive) {
+    if (artworkModalActive || welcomeModalActive) {
         // Only allow ESC to close modal (handled elsewhere)
+        return;
+    }
+    
+    // Don't handle keyboard if user is typing in an input
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
         return;
     }
     
     if (currentPage === 'page1') {
         // Any key press scrolls to next section on page 1
         // Ignore modifier keys
-        if (e.key === 'Control' || e.key === 'Alt' || e.key === 'Shift' || e.key === 'Meta') {
+        if (e.key === 'Control' || e.key === 'Alt' || e.key === 'Shift' || e.key === 'Meta' || e.key === 'Tab') {
             return;
         }
         
