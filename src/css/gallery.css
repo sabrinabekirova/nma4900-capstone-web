@@ -1,0 +1,227 @@
+/* ===== GALLERY PAGE ===== */
+/* Floor-specific background themes */
+#page2 {
+    transition: background 0.5s ease;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+#page2[data-floor="home"] {
+    background: #db4e35;
+    position: relative;
+}
+
+#page2[data-floor="home"]::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../assets/home-icon.svg');
+    background-size: 50px 50px;
+    background-position: 40px 40px;
+    background-repeat: space;
+    opacity: 0.15;
+    z-index: 0;
+    pointer-events: none;
+}
+
+#page2[data-floor="control"] {
+    background: #e27349;
+    position: relative;
+}
+
+#page2[data-floor="control"]::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../assets/control-icon.svg');
+    background-size: 50px 50px;
+    background-position: 40px 40px;
+    background-repeat: space;
+    opacity: 0.15;
+    z-index: 0;
+    pointer-events: none;
+}
+
+#page2[data-floor="shift"] {
+    background: #3d8999;
+    position: relative;
+}
+
+#page2[data-floor="shift"]::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../assets/shift-icon.svg');
+    background-size: 50px 50px;
+    background-position: 40px 40px;
+    background-repeat: space;
+    opacity: 0.15;
+    z-index: 0;
+    pointer-events: none;
+}
+
+#page2[data-floor="return"] {
+    background: #306d8b;
+    position: relative;
+}
+
+#page2[data-floor="return"]::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../assets/return-icon.svg');
+    background-size: 50px 50px;
+    background-position: 40px 40px;
+    background-repeat: space;
+    opacity: 0.15;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* ===== GALLERY NAVIGATION ===== */
+.gallery-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--teal);
+    padding: 0.25rem var(--spacing-md);
+    display: flex;
+    gap: var(--spacing-sm);
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    height: 45px;
+}
+
+.nav-left {
+    display: flex;
+    gap: var(--spacing-sm);
+    align-items: center;
+}
+
+.nav-right {
+    display: flex;
+    gap: var(--spacing-sm);
+    align-items: center;
+}
+
+.nav-btn {
+    background: transparent;
+    border: none;
+    padding: 0.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+    width: 35px;
+    height: 35px;
+}
+
+.nav-btn svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--text-cream);
+}
+
+.nav-btn .nav-icon {
+    width: 20px;
+    height: 20px;
+    filter: none;
+}
+
+.nav-btn:hover {
+    transform: scale(1.1);
+}
+
+.nav-btn:active {
+    transform: scale(0.95);
+}
+
+/* ===== GALLERY CONTAINER ===== */
+.gallery-container {
+    margin-top: 45px;
+    padding: var(--spacing-md);
+    height: calc(100vh - 45px);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-md);
+    width: 100%;
+    height: 100%;
+    justify-items: stretch;
+    align-items: stretch;
+    align-content: center;
+    margin: 0 auto;
+    padding: var(--spacing-md) 0;
+}
+
+.gallery-item {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    cursor: pointer;
+    background: var(--gray);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img,
+.gallery-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-item-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, rgba(50, 50, 50, 0.95), rgba(50, 50, 50, 0.7) 60%, transparent);
+    padding: 0.3rem 0.5rem;
+    color: #ffffff;
+    font-family: var(--font-primary);
+    font-size: 0.7rem;
+}
+
+.overlay-title {
+    font-weight: 700;
+    margin-bottom: 1px;
+    font-size: 0.8rem;
+    color: #ffffff;
+}
+
+.overlay-artist {
+    font-size: 0.7rem;
+    opacity: 0.85;
+    font-weight: 400;
+    color: #ffffff;
+}

@@ -1,0 +1,27 @@
+/* ===== CSS VARIABLES ===== */
+:root {
+    /* Brand Colors */
+    --red-orange: #db4e35;
+    --orange: #e27349;
+    --peach: #eca976;
+    --cream: #f7deb7;
+    --teal-light: #7eaba4;
+    --teal: #3d8999;
+    --blue: #306d8b;
+    --navy: #15254c;
+    
+    /* Legacy/Additional colors */
+    --text-cream: #fefce5;
+    --gray: #b8bbb1;
+    
+    /* Fonts */
+    --font-primary: 'JetBrains Mono', monospace;
+    --font-secondary: 'Inter', sans-serif;
+    
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 6rem;
+}

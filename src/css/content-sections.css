@@ -1,0 +1,277 @@
+/* ===== CONTENT SECTIONS ===== */
+.content-section {
+    padding: var(--spacing-xl) var(--spacing-md);
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-section {
+    background-color: transparent;
+    color: var(--text-cream);
+    min-height: 100vh;
+}
+
+.content-section.dark {
+    background-color: transparent;
+    color: var(--text-cream);
+}
+
+#social-section {
+    background-color: transparent;
+    color: var(--text-cream);
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* ===== TYPOGRAPHY ===== */
+h2 {
+    font-family: var(--font-primary);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-md);
+    color: inherit;
+}
+
+h3 {
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+    color: inherit;
+}
+
+h4 {
+    font-family: var(--font-primary);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+    color: inherit;
+}
+
+.exhibition-dates {
+    font-family: var(--font-primary);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+    color: inherit;
+}
+
+.content-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 800px;
+}
+
+.exhibition-description {
+    max-width: 900px;
+    margin-bottom: var(--spacing-md);
+}
+
+/* ===== EXHIBITION LAYOUT (IN ABOUT SECTION) ===== */
+.exhibition-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 80px;
+}
+
+/* Left Side: Description Panel */
+.description-panel {
+    flex: 1;
+    position: relative;
+    min-height: 600px;
+}
+
+.description-content {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.4s ease-in-out;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    right: 0;
+}
+
+.description-content.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.floor-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+    color: var(--text-cream);
+}
+
+.featured-artists {
+    margin-top: var(--spacing-md);
+}
+
+.featured-artists p {
+    font-size: 1rem;
+    color: var(--text-cream);
+    margin-bottom: var(--spacing-xs);
+}
+
+/* Right Side: Vertical Floor Icons */
+.floor-icons-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    flex-shrink: 0;
+    padding-top: 0;
+    transform: translateX(-60px);
+}
+
+.floor-icons-vertical .key-item {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.25s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: iconPulse 3s ease-in-out infinite;
+}
+
+.floor-icons-vertical .key-item:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.floor-icons-vertical .key-item:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.floor-icons-vertical .key-item:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.floor-icons-vertical .key-item:nth-child(4) {
+    animation-delay: 0.9s;
+}
+
+.floor-icons-vertical .key-item:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 8px 20px rgba(254, 252, 229, 0.6));
+    animation: none;
+}
+
+.floor-icons-vertical .key-item:active {
+    transform: scale(1.05);
+}
+
+@keyframes iconPulse {
+    0%, 100% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 0 rgba(254, 252, 229, 0));
+    }
+    50% {
+        transform: scale(1.05);
+        filter: drop-shadow(0 4px 12px rgba(254, 252, 229, 0.4));
+    }
+}
+
+.floor-icons-vertical .key-svg {
+    width: 100px;
+    height: auto;
+    display: block;
+}
+
+.card-key-icon {
+    fill: var(--text-cream);
+}
+
+.card-key-icon-stroke {
+    fill: none;
+    stroke: var(--text-cream);
+    stroke-width: 3px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+/* ===== VISIT SECTION ===== */
+.visit-info {
+    max-width: 800px;
+}
+
+.info-row {
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 1px solid rgba(254, 252, 229, 0.2);
+}
+
+.info-row:last-child {
+    border-bottom: none;
+}
+
+.info-row p {
+    margin-bottom: var(--spacing-xs);
+    line-height: 1.8;
+}
+
+.info-row strong {
+    font-family: var(--font-primary);
+    font-size: 1.1rem;
+    color: var(--text-cream);
+}
+
+.info-link {
+    color: var(--teal-light);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 600;
+}
+
+.info-link:hover {
+    color: var(--text-cream);
+    text-decoration: underline;
+}
+
+/* ===== SOCIAL SECTION ===== */
+.social-links {
+    display: flex;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: inline-block;
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: var(--teal);
+    color: var(--text-cream);
+    text-decoration: none;
+    font-family: var(--font-primary);
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== SLIDE IN ANIMATIONS ===== */
+.slide-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.slide-in-visible {
+    opacity: 1;
+    transform: translateY(0);
+}

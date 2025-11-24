@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 171.88 224.06">
+  <!-- Generator: Adobe Illustrator 30.0.0, SVG Export Plug-In . SVG Version: 2.1.1 Build 123)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #e2e1d2;
+      }
+
+      .st1, .st2, .st3 {
+        fill: #fefce5;
+      }
+
+      .st4, .st2, .st3 {
+        isolation: isolate;
+      }
+
+      .st2 {
+        font-family: JetBrainsMono-SemiBold, 'JetBrains Mono';
+        font-size: 19.61px;
+        font-weight: 600;
+      }
+
+      .st5 {
+        fill: #b8bbb1;
+      }
+
+      .st6 {
+        fill: #028b9b;
+      }
+
+      .st3 {
+        font-family: JetBrainsMono-Bold, 'JetBrains Mono';
+        font-size: 10px;
+        font-weight: 700;
+      }
+
+      .st7 {
+        stroke-width: 4px;
+      }
+
+      .st7, .st8 {
+        fill: none;
+        stroke: #fefce5;
+        stroke-miterlimit: 10;
+      }
+
+      .st8 {
+        stroke-width: 5px;
+      }
+
+      .st9 {
+        fill: #02839c;
+      }
+    </style>
+  </defs>
+  <rect class="st0" width="171.88" height="224.06" rx="12" ry="12"/>
+  <rect class="st5" x="17.79" y="20.76" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+  <rect class="st5" x="69.43" y="20.76" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+  <rect class="st5" x="123.43" y="20.76" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+  <rect class="st5" x="17.79" y="122.37" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+  <rect class="st5" x="17.79" y="71.57" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+  <rect class="st5" x="17.79" y="173.18" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+  <rect class="st5" x="69.43" y="71.57" width="96" height="41.9" rx="16.18" ry="16.18"/>
+  <rect class="st5" x="69.27" y="173.18" width="96" height="41.9" rx="16.18" ry="16.18"/>
+  <rect class="st5" x="69.43" y="122.37" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+  <rect class="st5" x="123.43" y="122.37" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+  <rect class="st6" x="63.56" y="13.95" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+  <rect class="st6" x="117.27" y="13.95" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+  <rect class="st6" x="9.84" y="13.95" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+  <rect class="st6" x="9.84" y="64.84" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+  <rect class="st6" x="63.56" y="64.84" width="95.71" height="41.9" rx="16.18" ry="16.18"/>
+  <g class="st4">
+    <text class="st3" transform="translate(16.74 50.32)"><tspan x="0" y="0">Press</tspan></text>
+  </g>
+  <g class="st4">
+    <text class="st3" transform="translate(33.7 99.65)"><tspan x="0" y="0">To</tspan></text>
+  </g>
+  <g class="st4">
+    <text class="st3" transform="translate(103.05 99.65)"><tspan x="0" y="0">Continue</tspan></text>
+  </g>
+  <g class="st4">
+    <text class="st3" transform="translate(81 50.32)"><tspan x="0" y="0">Any</tspan></text>
+  </g>
+  <g class="st4">
+    <text class="st3" transform="translate(137.22 50.32)"><tspan x="0" y="0">Key</tspan></text>
+  </g>
+  <g id="_x2B_" class="st4">
+    <rect class="st9" x="63.56" y="115.73" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+    <text class="st2" transform="translate(78.47 142.8)"><tspan x="0" y="0">+</tspan></text>
+  </g>
+  <g id="Home_Button">
+    <rect class="st9" x="9.86" y="166.61" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+    <polygon id="Home" class="st1" points="30.42 177.39 21.63 184.31 21.63 197.73 39.21 197.73 39.21 184.31 30.42 177.39"/>
+  </g>
+  <g id="Shift">
+    <rect class="st9" x="9.84" y="115.73" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+    <polygon class="st1" points="38.1 132.94 30.42 125.28 22.74 132.94 30.35 133.01 38.1 132.94"/>
+    <rect class="st1" x="26.31" y="133.02" width="8.22" height="9.14"/>
+    <rect class="st1" x="26.31" y="143.15" width="8.22" height="2.72"/>
+  </g>
+  <g id="Control">
+    <rect class="st9" x="117.27" y="115.73" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+    <path class="st7" d="M132.48,139.81l5.66-5.54,5.91,5.55"/>
+  </g>
+  <g id="Return">
+    <rect class="st9" x="64.71" y="166.61" width="95.69" height="41.9" rx="16.18" ry="16.18"/>
+    <g id="Arrow">
+      <polygon class="st1" points="96.58 183.82 105.73 177.05 105.82 183.76 105.73 190.59 96.58 183.82"/>
+      <path class="st1" d="M119.25,197.15v-10.91h-13.43v-4.71h16.26c1.43,0,2.62.89,2.79,2.05h.03v13.57h-5.65Z"/>
+      <circle class="st1" cx="122.17" cy="196.27" r="2.73"/>
+      <line class="st8" x1="108.81" y1="196.55" x2="122.17" y2="196.55"/>
+    </g>
+  </g>
+</svg>

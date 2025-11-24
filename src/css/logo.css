@@ -1,0 +1,300 @@
+/* ===== LOGO SECTION ===== */
+.logo-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+}
+
+/* Retro CRT scanline effect */
+.logo-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.05) 0px,
+        transparent 1px,
+        transparent 2px,
+        rgba(0, 0, 0, 0.05) 3px
+    );
+    pointer-events: none;
+    z-index: 2;
+    animation: scanlines 8s linear infinite;
+}
+
+@keyframes scanlines {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+/* Retro screen flicker */
+.logo-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.02);
+    pointer-events: none;
+    z-index: 2;
+    animation: flicker 0.15s infinite;
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.85;
+    }
+}
+
+/* Transparent keyboard behind logo */
+.transparent-keyboard {
+    width: 500px;
+    height: auto;
+    transform: rotate(15deg);
+    position: absolute;
+    z-index: 5;
+    opacity: 0.15;
+    animation: float-slow 8s ease-in-out infinite, pulse-glow 4s ease-in-out infinite;
+    filter: blur(1px) drop-shadow(0 0 30px rgba(61, 137, 153, 0.5));
+}
+
+.transparent-key-bg {
+    fill: none;
+    stroke: var(--teal);
+    stroke-width: 2;
+    opacity: 0.3;
+}
+
+.transparent-key {
+    fill: rgba(61, 137, 153, 0.2);
+    stroke: var(--text-cream);
+    stroke-width: 1.5;
+    opacity: 0.4;
+}
+
+@keyframes float-slow {
+    0%, 100% {
+        transform: rotate(15deg) translateY(0px) scale(1);
+    }
+    50% {
+        transform: rotate(15deg) translateY(-30px) scale(1.05);
+    }
+}
+
+@keyframes pulse-glow {
+    0%, 100% {
+        opacity: 0.15;
+        filter: blur(1px) drop-shadow(0 0 30px rgba(61, 137, 153, 0.5));
+    }
+    50% {
+        opacity: 0.25;
+        filter: blur(2px) drop-shadow(0 0 50px rgba(61, 137, 153, 0.8));
+    }
+}
+
+#logo-wrapper {
+    width: 400px;
+    height: auto;
+    transform: rotate(15deg);
+    position: relative;
+    z-index: 10;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: rotate(15deg) translateY(0px);
+    }
+    50% {
+        transform: rotate(15deg) translateY(-20px);
+    }
+}
+
+#main-logo {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.1)) drop-shadow(0 0 40px rgba(255, 255, 255, 0.6));
+    animation: glow 3s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0%, 100% {
+        filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.1)) drop-shadow(0 0 40px rgba(255, 255, 255, 0.4));
+    }
+    50% {
+        filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.1)) drop-shadow(0 0 60px rgba(255, 255, 255, 0.8));
+    }
+}
+
+/* ===== SVG STYLES ===== */
+.key-bg {
+    fill: var(--cream);
+}
+
+.static-key {
+    fill: var(--gray);
+}
+
+.active-key {
+    fill: #028b9b;
+}
+
+/* Title keys start with #028b9b */
+.title-key .active-key {
+    fill: #028b9b;
+}
+
+/* Nav keys start with #02839c */
+.nav-key .active-key {
+    fill: #02839c;
+}
+
+/* Nav key color without animation (for plus key) */
+.nav-key-color {
+    fill: #02839c;
+}
+
+.key-text {
+    fill: var(--text-cream);
+    font-family: var(--font-primary);
+    font-size: 10px;
+    font-weight: 700;
+    isolation: isolate;
+}
+
+.key-text-large {
+    fill: var(--text-cream);
+    font-family: var(--font-primary);
+    font-size: 19.61px;
+    font-weight: 600;
+    isolation: isolate;
+}
+
+.key-icon {
+    fill: var(--text-cream);
+}
+
+.key-icon-stroke {
+    fill: none;
+    stroke: var(--text-cream);
+    stroke-width: 4px;
+    stroke-miterlimit: 10;
+}
+
+.key-icon-stroke-thick {
+    fill: none;
+    stroke: var(--text-cream);
+    stroke-width: 5px;
+    stroke-miterlimit: 10;
+}
+
+/* ===== LOGO KEY ANIMATIONS ===== */
+
+/* Title Keys Animation - Appear first */
+.title-key {
+    animation: bounceIn 0.8s ease-out forwards;
+}
+
+/* Color darken on title key backgrounds */
+.title-key .active-key {
+    animation: colorDarken 0.8s ease-out forwards;
+}
+
+/* Stagger title keys by ID */
+#press-key { animation-delay: 0s; }
+#press-key .active-key { animation-delay: 0s; }
+
+#any-key { animation-delay: 0.25s; }
+#any-key .active-key { animation-delay: 0.25s; }
+
+#key-key { animation-delay: 0.5s; }
+#key-key .active-key { animation-delay: 0.5s; }
+
+#to-key { animation-delay: 0.75s; }
+#to-key .active-key { animation-delay: 0.75s; }
+
+#continue-key { animation-delay: 1s; }
+#continue-key .active-key { animation-delay: 1s; }
+
+@keyframes bounceIn {
+    0% {
+        transform: translateY(2px) scale(0.98);
+    }
+    50% {
+        transform: translateY(1px) scale(0.97);
+    }
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Nav Keys Animation - Appear after title keys with color change */
+.nav-key {
+    animation: bounceIn 0.8s ease-out forwards;
+}
+
+/* Color change on the key background */
+.nav-key .active-key {
+    animation: colorPulse 0.8s ease-out forwards;
+}
+
+/* Stagger nav keys by ID - start after title keys with a shorter pause */
+/* Order: home, control, shift, return */
+#home-key { animation-delay: 2s; }
+#home-key .active-key { animation-delay: 2s; }
+
+#control-key { animation-delay: 2.35s; }
+#control-key .active-key { animation-delay: 2.35s; }
+
+#shift-key { animation-delay: 2.7s; }
+#shift-key .active-key { animation-delay: 2.7s; }
+
+#return-key { animation-delay: 3.05s; }
+#return-key .active-key { animation-delay: 3.05s; }
+
+/* Color darken animation for title key backgrounds */
+@keyframes colorDarken {
+    0% {
+        fill: #028b9b;
+    }
+    50% {
+        fill: #B55D7C;
+    }
+    100% {
+        fill: #B55D7C;
+    }
+}
+
+/* Color change animation for nav key backgrounds */
+@keyframes colorPulse {
+    0% {
+        fill: #02839c;
+    }
+    40% {
+        fill: #B55D7C;
+    }
+    70% {
+        fill: #B55D7C;
+    }
+    100% {
+        fill: #02839c;
+    }
+}

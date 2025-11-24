@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Press Any Key To Continue - Fall 2025 NMA Capstone</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon-main.svg" id="favicon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Landing Page -->
+    <div id="page1" class="page active">
+        <!-- Logo Fade In Section -->
+        <section id="logo-section" class="logo-container">
+            <!-- Transparent keyboard behind logo -->
+            <svg class="transparent-keyboard" viewBox="0 0 171.88 224.06">
+                <rect class="transparent-key-bg" width="171.88" height="224.06" rx="12" ry="12"/>
+                <rect class="transparent-key" x="17.79" y="20.76" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+                <rect class="transparent-key" x="69.43" y="20.76" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+                <rect class="transparent-key" x="123.43" y="20.76" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+                <rect class="transparent-key" x="17.79" y="71.57" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+                <rect class="transparent-key" x="69.43" y="71.57" width="96" height="41.9" rx="16.18" ry="16.18"/>
+                <rect class="transparent-key" x="17.79" y="122.37" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+                <rect class="transparent-key" x="69.43" y="122.37" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+                <rect class="transparent-key" x="123.43" y="122.37" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+                <rect class="transparent-key" x="17.79" y="173.18" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+                <rect class="transparent-key" x="69.27" y="173.18" width="96" height="41.9" rx="16.18" ry="16.18"/>
+                <rect class="transparent-key" x="9.84" y="13.95" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+                <rect class="transparent-key" x="63.56" y="13.95" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+                <rect class="transparent-key" x="117.27" y="13.95" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+                <rect class="transparent-key" x="9.84" y="64.84" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+                <rect class="transparent-key" x="63.56" y="64.84" width="95.71" height="41.9" rx="16.18" ry="16.18"/>
+                <rect class="transparent-key" x="9.84" y="115.73" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+                <rect class="transparent-key" x="63.56" y="115.73" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+                <rect class="transparent-key" x="117.27" y="115.73" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+                <rect class="transparent-key" x="9.86" y="166.61" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+                <rect class="transparent-key" x="64.71" y="166.61" width="95.69" height="41.9" rx="16.18" ry="16.18"/>
+            </svg>
+            
+            <div id="logo-wrapper">
+                <svg id="main-logo" viewBox="0 0 171.88 224.06">
+                    <!-- Base keyboard -->
+                    <rect class="key-bg" width="171.88" height="224.06" rx="12" ry="12"/>
+                    
+                    <!-- Static keys (gray) -->
+                    <rect class="static-key" x="17.79" y="20.76" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+                    <rect class="static-key" x="69.43" y="20.76" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+                    <rect class="static-key" x="123.43" y="20.76" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+                    <rect class="static-key" x="17.79" y="122.37" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+                    <rect class="static-key" x="17.79" y="71.57" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+                    <rect class="static-key" x="17.79" y="173.18" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+                    <rect class="static-key" x="69.43" y="71.57" width="96" height="41.9" rx="16.18" ry="16.18"/>
+                    <rect class="static-key" x="69.27" y="173.18" width="96" height="41.9" rx="16.18" ry="16.18"/>
+                    <rect class="static-key" x="69.43" y="122.37" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+                    <rect class="static-key" x="123.43" y="122.37" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+                    
+                    <!-- Animated Keys (teal) - Title Keys -->
+                    <g id="press-key" class="title-key">
+                        <rect class="active-key" x="9.84" y="13.95" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+                        <text class="key-text" transform="translate(16.74 50.32)">Press</text>
+                    </g>
+                    
+                    <g id="any-key" class="title-key">
+                        <rect class="active-key" x="63.56" y="13.95" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+                        <text class="key-text" transform="translate(81 50.32)">Any</text>
+                    </g>
+                    
+                    <g id="key-key" class="title-key">
+                        <rect class="active-key" x="117.27" y="13.95" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+                        <text class="key-text" transform="translate(137.22 50.32)">Key</text>
+                    </g>
+                    
+                    <g id="to-key" class="title-key">
+                        <rect class="active-key" x="9.84" y="64.84" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+                        <text class="key-text" transform="translate(33.7 99.65)">To</text>
+                    </g>
+                    
+                    <g id="continue-key" class="title-key">
+                        <rect class="active-key" x="63.56" y="64.84" width="95.71" height="41.9" rx="16.18" ry="16.18"/>
+                        <text class="key-text" transform="translate(103.05 99.65)">Continue</text>
+                    </g>
+                    
+                    <!-- Navigation Keys (will drop down) -->
+                    <g id="shift-key" class="nav-key">
+                        <rect class="active-key" x="9.84" y="115.73" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+                        <polygon class="key-icon" points="38.1 132.94 30.42 125.28 22.74 132.94 30.35 133.01 38.1 132.94"/>
+                        <rect class="key-icon" x="26.31" y="133.02" width="8.22" height="9.14"/>
+                        <rect class="key-icon" x="26.31" y="143.15" width="8.22" height="2.72"/>
+                    </g>
+                    
+                    <g id="plus-key">
+                        <rect class="active-key nav-key-color" x="63.56" y="115.73" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+                        <text class="key-text-large" transform="translate(78.47 142.8)">+</text>
+                    </g>
+                    
+                    <g id="control-key" class="nav-key">
+                        <rect class="active-key" x="117.27" y="115.73" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+                        <path class="key-icon-stroke" d="M132.48,139.81l5.66-5.54,5.91,5.55"/>
+                    </g>
+                    
+                    <g id="home-key" class="nav-key">
+                        <rect class="active-key" x="9.86" y="166.61" width="41.99" height="41.9" rx="16.18" ry="16.18"/>
+                        <polygon class="key-icon" points="30.42 177.39 21.63 184.31 21.63 197.73 39.21 197.73 39.21 184.31 30.42 177.39"/>
+                    </g>
+                    
+                    <g id="return-key" class="nav-key">
+                        <rect class="active-key" x="64.71" y="166.61" width="95.69" height="41.9" rx="16.18" ry="16.18"/>
+                        <g>
+                            <polygon class="key-icon" points="96.58 183.82 105.73 177.05 105.82 183.76 105.73 190.59 96.58 183.82"/>
+                            <path class="key-icon" d="M119.25,197.15v-10.91h-13.43v-4.71h16.26c1.43,0,2.62.89,2.79,2.05h.03v13.57h-5.65Z"/>
+                            <circle class="key-icon" cx="122.17" cy="196.27" r="2.73"/>
+                            <line class="key-icon-stroke-thick" x1="108.81" y1="196.55" x2="122.17" y2="196.55"/>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about-section" class="content-section">
+            <div class="exhibition-layout">
+                <!-- Left Side: Dynamic Description -->
+                <div class="description-panel">
+                    <h2>PRESS ANY KEY TO CONTINUE</h2>
+                    <h3>Fall 2025 New Media Arts Capstone Exhibition</h3>
+                    
+                    <div id="exhibition-text" class="description-content active">
+                        <p class="exhibition-description"><em>Press Any Key to Continue</em> is a collaborative group exhibition of original artworks created and curated by the students of Professor Katherine Behar's New Media Arts capstone class. Over the course of the fall semester, twenty-two students, Sabrina Bekirova, Rashel Carrillo, Steven Cen, Anne Chen, Yanyun Chen, Justine Cheng, Abeha Choudhry, Amit Dhar, Mary Ford, Elvia Gonzalez, Keeanna Gray, Citlali Hernandez, Bryan Lai, Jiaqi Liu, Lulu O'Rourke-Chisholm, Syeda Saima, Karina Sarmiento, Pinky Sarway, Evelyn Vasquez, Andri Xu Wu, Jhonny Xu Wu, and Liana Zou, created meaningful digital artworks.</p>
+                        <p class="exhibition-description">The title of this exhibition nods to the technology we have worked with throughout various New Media Arts classes. The artworks explore themes of <em>Home</em>, <em>Control</em>, <em>Shift</em>, and <em>Return</em>, each of which occupies a floor of the gallery. While these groupings reference the familiar buttons we see on keyboards, they are also representative of themes such as culture and family, economy and social conflicts, growing and shifting perspectives, and self-reflection and love.</p>
+                    </div>
+                    
+                    <div id="home-text" class="description-content">
+                        <h4>Home - Floor 2</h4>
+                        <p class="floor-description">The first floor of this exhibition, Home, explores culture and family through personal stories about language and traditions. Home portrays the tension between a sense of belonging and feeling distant from one's cultural roots, even when trying to reconnect. The six artists featured on this floor are Anne Chen, Elvia Gonzalez, Keeanna Gray, Citlali Hernandez, Jiaqi Liu, and Evelyn Vasquez. Their works collectively illustrate what Home means to each of them—a place of comfort and nostalgia where memories and identity come together, revealing who they are proud to become.</p>
+                        <div class="featured-artists">
+                            <p><strong>Featured Artists:</strong></p>
+                            <p>Anne Chen, Elvia Gonzalez, Keeanna Gray, Citlali Hernandez, Jiaqi Liu, Evelyn Vasquez</p>
+                        </div>
+                    </div>
+                    
+                    <div id="control-text" class="description-content">
+                        <h4>Control - Floor 3</h4>
+                        <p class="floor-description">The next floor is inspired by the Control key, symbolizing the invisible systems that shape our lives. This section of the exhibition addresses economic and social conflict. The works focus on rules and authorities that subtly influence us, keeping us in cycles of debt, pressure, and exploitation. The six artists featured in Control are Steven Cen, Yanyun Chen, Justine Cheng, Amit Dhar, Bryan Lai, and Liana Zou. They expose hidden systems of control through their works.</p>
+                        <div class="featured-artists">
+                            <p><strong>Featured Artists:</strong></p>
+                            <p>Steven Cen, Yanyun Chen, Justine Cheng, Amit Dhar, Bryan Lai, Liana Zou</p>
+                        </div>
+                    </div>
+                    
+                    <div id="shift-text" class="description-content">
+                        <h4>Shift - Floor 4</h4>
+                        <p class="floor-description">The fourth floor of this exhibit is titled Shift as it conveys five artists' growth and shifting perspectives. Most of the featured works demonstrate dealing with life's challenges and adjusting how people react when confronted with difficult circumstances. Abeha Choudhry, Andri Xu Wu, and Johnny Xu Wu's artworks illustrate how individuals respond to the world around them and find comfort amidst the challenges they face.</p>
+                        <div class="featured-artists">
+                            <p><strong>Featured Artists:</strong></p>
+                            <p>Abeha Choudhry, Mary Ford, Pinky Sarway, Andri Xu Wu, Jhonny Xu Wu</p>
+                        </div>
+                    </div>
+                    
+                    <div id="return-text" class="description-content">
+                        <h4>Return - Floor 5</h4>
+                        <p class="floor-description">Inspired by the Return key, the fifth floor of the exhibition captures journeys of self reflection and love. Each artist highlights personal moments that make up who they are. The five artists featured in Return are Sabrina Bekirova, Rashel Carrillo, Lulu O'Rourke-Chisholm, Syeda Saima, and Karina Sarmiento. This collection of video works show a glimpse inside each artist's life showing memories and moments in time.</p>
+                        <div class="featured-artists">
+                            <p><strong>Featured Artists:</strong></p>
+                            <p>Sabrina Bekirova, Rashel Carrillo, Lulu O'Rourke-Chisholm, Syeda Saima, Karina Sarmiento</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Side: Vertical Floor Icons -->
+                <div class="floor-icons-vertical">
+                    <div class="key-item" data-key="home">
+                        <img src="assets/home-icon.svg" alt="Home" class="key-svg">
+                    </div>
+                    
+                    <div class="key-item" data-key="control">
+                        <img src="assets/control-icon.svg" alt="Control" class="key-svg">
+                    </div>
+                    
+                    <div class="key-item" data-key="shift">
+                        <img src="assets/shift-icon.svg" alt="Shift" class="key-svg">
+                    </div>
+                    
+                    <div class="key-item" data-key="return">
+                        <img src="assets/return-icon.svg" alt="Return" class="key-svg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Visit Us Section -->
+        <section id="visit-section" class="content-section dark">
+            <div class="container">
+                <h2>Visit Us</h2>
+                <div class="visit-info">
+                    <div class="info-row">
+                        <p><strong>Exhibition Dates:</strong></p>
+                        <p>December 15th, 2025 – February 3rd, 2026</p>
+                    </div>
+                    
+                    <div class="info-row">
+                        <p><strong>Opening Reception:</strong></p>
+                        <p>Monday, December 15th, 2025 | 1:30–3:30 PM</p>
+                    </div>
+                    
+                    <div class="info-row">
+                        <p><strong>Location:</strong></p>
+                        <p><a href="https://newmediartspace.info/index.php" target="_blank" rel="noopener noreferrer" class="info-link">New Media Artspace</a></p>
+                        <p>Floors 2–5, Newman Library</p>
+                        <p>151 E. 25th Street, New York, NY 10010</p>
+                    </div>
+                    
+                    <div class="info-row">
+                        <p><strong>Contact:</strong></p>
+                        <p><a href="mailto:newmediaartspace@gmail.com" class="info-link">newmediaartspace@gmail.com</a></p>
+                    </div>
+                    
+                    <div class="info-row">
+                        <p><strong>Follow Us:</strong></p>
+                        <p><a href="https://www.instagram.com/press2start_nma?igsh=aWJ3c2JmdzY5YTZt" target="_blank" rel="noopener noreferrer" class="info-link">@press2start_nma</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Gallery Page -->
+    <div id="page2" class="page">
+        <!-- Navigation Bar -->
+        <nav class="gallery-nav">
+            <div class="nav-left">
+                <button class="nav-btn" id="restart-btn" title="Restart">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="nav-right">
+                <button class="nav-btn" id="home-nav-btn" title="Home Floor">
+                    <img src="assets/home-icon.svg" alt="Home" class="nav-icon">
+                </button>
+                <button class="nav-btn" id="control-nav-btn" title="Control Floor">
+                    <img src="assets/control-icon.svg" alt="Control" class="nav-icon">
+                </button>
+                <button class="nav-btn" id="shift-nav-btn" title="Shift Floor">
+                    <img src="assets/shift-icon.svg" alt="Shift" class="nav-icon">
+                </button>
+                <button class="nav-btn" id="return-nav-btn" title="Return Floor">
+                    <img src="assets/return-icon.svg" alt="Return" class="nav-icon">
+                </button>
+            </div>
+        </nav>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-container">
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Gallery items will be dynamically populated -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="artwork-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <button class="modal-nav modal-prev" id="modal-prev" title="Previous artwork">
+                <svg viewBox="0 0 24 24" width="32" height="32">
+                    <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" fill="none"/>
+                </svg>
+            </button>
+            <button class="modal-nav modal-next" id="modal-next" title="Next artwork">
+                <svg viewBox="0 0 24 24" width="32" height="32">
+                    <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" fill="none"/>
+                </svg>
+            </button>
+            <div class="modal-body" id="modal-body">
+                <!-- Content will be dynamically populated -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Return to Top Button -->
+    <button id="back-to-top" class="back-to-top" title="Back to top">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+            <path d="M7 14l5-5 5 5z" fill="currentColor"/>
+        </svg>
+    </button>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>

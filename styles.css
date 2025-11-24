@@ -1,0 +1,21 @@
+
+/* 1. Variables - Must be first so other modules can use them */
+@import url('src/css/variables.css');
+
+/* 2. Base styles - Reset and fundamental styles */
+@import url('src/css/base.css');
+
+/* 3. Logo section - Landing page logo and animations */
+@import url('src/css/logo.css');
+
+/* 4. Content sections - About, visit, exhibition layout */
+@import url('src/css/content-sections.css');
+
+/* 5. Gallery - Gallery page and navigation */
+@import url('src/css/gallery.css');
+
+/* 6. Modal - Artwork detail modal */
+@import url('src/css/modal.css');
+
+/* 7. Responsive - Media queries for different screen sizes */
+@import url('src/css/responsive.css');

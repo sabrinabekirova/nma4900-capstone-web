@@ -1,0 +1,89 @@
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Tablet and smaller desktops */
+@media (max-width: 968px) {
+    .exhibition-layout {
+        flex-direction: column-reverse;
+        gap: var(--spacing-lg);
+    }
+    
+    .floor-icons-vertical {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 0;
+        transform: translateX(0);
+    }
+    
+    .description-panel {
+        min-height: 400px;
+    }
+}
+
+/* Mobile landscape and tablets */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .content-section {
+        padding: var(--spacing-md);
+    }
+    
+    #logo-wrapper {
+        width: 320px;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-sm);
+    }
+    
+    .nav-btn {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .nav-btn svg {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .social-links {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+    
+    .social-link {
+        text-align: center;
+    }
+    
+    .modal-body {
+        padding: var(--spacing-md);
+    }
+    
+    .modal-title {
+        font-size: 1.5rem;
+    }
+    
+    .modal-nav {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .modal-nav svg {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+/* Mobile portrait */
+@media (max-width: 480px) {
+    #logo-wrapper {
+        width: 260px;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}

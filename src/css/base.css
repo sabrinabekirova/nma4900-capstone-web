@@ -1,0 +1,148 @@
+/* ===== RESET & BASE STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(61, 137, 153, 0.4) transparent;
+}
+
+body {
+    font-family: var(--font-secondary);
+    background-color: var(--cream);
+    color: var(--navy);
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+body:has(#page2.active) {
+    overflow: hidden;
+    height: 100vh;
+}
+
+/* ===== PAGE MANAGEMENT ===== */
+.page {
+    display: none;
+    min-height: 100vh;
+}
+
+.page.active {
+    display: block;
+}
+
+/* Gradient background for entire page 1 */
+#page1 {
+    background: linear-gradient(
+        180deg,
+        var(--red-orange) 0%,
+        var(--orange) 16.66%,
+        var(--peach) 33.33%,
+        var(--teal-light) 50%,
+        var(--teal) 66.66%,
+        var(--blue) 83.33%,
+        var(--navy) 100%
+    );
+}
+
+/* ===== UTILITY CLASSES ===== */
+.hidden {
+    display: none !important;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* ===== SCROLLBAR STYLING ===== */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(61, 137, 153, 0.4);
+    transition: background 0.3s ease;
+    opacity: 0;
+    transition: opacity 0.3s ease, background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(61, 137, 153, 0.7);
+}
+
+html:hover ::-webkit-scrollbar-thumb {
+    opacity: 1;
+}
+
+body::-webkit-scrollbar-thumb {
+    opacity: 0;
+}
+
+body:hover::-webkit-scrollbar-thumb,
+body:active::-webkit-scrollbar-thumb {
+    opacity: 1;
+}
+
+/* Firefox auto-hide support */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(61, 137, 153, 0.4) transparent;
+}
+
+/* ===== BACK TO TOP BUTTON ===== */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: var(--teal);
+    color: var(--text-cream);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background: var(--blue);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.back-to-top:active {
+    transform: translateY(-2px);
+}
+
+.back-to-top svg {
+    width: 24px;
+    height: 24px;
+}
