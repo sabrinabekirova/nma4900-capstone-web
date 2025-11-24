@@ -22,12 +22,26 @@
     }
     
     .description-panel {
-        min-height: 400px;
+        display: block;
+        order: 2;
+        width: 100%;
+        min-height: 0;
     }
     
     .description-content {
         position: relative;
         top: 0;
+    }
+    
+    /* Hide floor-specific descriptions on mobile/tablet, only show exhibition */
+    .description-content:not(#exhibition-text) {
+        display: none !important;
+    }
+    
+    #exhibition-text {
+        opacity: 1 !important;
+        visibility: visible !important;
+        pointer-events: auto !important;
     }
 }
 

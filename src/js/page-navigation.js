@@ -20,6 +20,11 @@ export function navigateToGallery(category = null) {
         window.location.hash = category;
         // Update favicon for the floor
         updateFavicon(category);
+        
+        // Show welcome modal on mobile/tablet
+        if (window.innerWidth <= 968) {
+            showWelcomeModal(category);
+        }
     } else {
         page2.removeAttribute('data-floor');
         window.location.hash = 'gallery';
@@ -119,4 +124,48 @@ export function switchDescription(category) {
     if (targetDesc) {
         targetDesc.classList.add('active');
     }
+}
+
+// Show welcome modal for mobile/tablet
+export function showWelcomeModal(category) {
+    const floorInfo = {
+        home: { floor: 2, name: 'Home', description: 'The first floor of this exhibition, Home, explores culture and family through personal stories about language and traditions. Home portrays the tension between a sense of belonging and feeling distant from one\'s cultural roots, even when trying to reconnect. The six artists featured on this floor are Anne Chen, Elvia Gonzalez, Keeanna Gray, Citlali Hernandez, Jiaqi Liu, and Evelyn Vasquez. Their works collectively illustrate what Home means to each of them—a place of comfort and nostalgia where memories and identity come together, revealing who they are proud to become.' },
+        control: { floor: 3, name: 'Control', description: 'The next floor is inspired by the Control key, symbolizing the invisible systems that shape our lives. This section of the exhibition addresses economic and social conflict. The works focus on rules and authorities that subtly influence us, keeping us in cycles of debt, pressure, and exploitation. The six artists featured in Control are Steven Cen, Yanyun Chen, Justine Cheng, Amit Dhar, Bryan Lai, and Liana Zou. They expose hidden systems of control through their works.' },
+        shift: { floor: 4, name: 'Shift', description: 'The fourth floor of this exhibit is titled Shift as it conveys five artists\' growth and shifting perspectives. Most of the featured works demonstrate dealing with life\'s challenges and adjusting how people react when confronted with difficult circumstances. Abeha Choudhry, Andri Xu Wu, and Johnny Xu Wu\'s artworks illustrate how individuals respond to the world around them and find comfort amidst the challenges they face.' },
+        return: { floor: 5, name: 'Return', description: 'Inspired by the Return key, the fifth floor of the exhibition captures journeys of self reflection and love. Each artist highlights personal moments that make up who they are. The five artists featured in Return are Sabrina Bekirova, Rashel Carrillo, Lulu O\'Rourke-Chisholm, Syeda Saima, and Karina Sarmiento. This collection of video works show a glimpse inside each artist\'s life showing memories and moments in time.' }
+    };
+    
+    const info = floorInfo[category];
+    if (!info) return;
+    
+    const modal = document.getElementById('welcome-modal');
+    const welcomeBody = document.getElementById('welcome-body');
+    const welcomeContent = modal.querySelector('.welcome-content');
+    
+    // Remove any existing floor classes
+    welcomeContent.classList.remove('floor-home', 'floor-control', 'floor-shift', 'floor-return');
+    
+    // Add the current floor class
+    welcomeContent.classList.add(`floor-${category}`);
+    
+    welcomeBody.innerHTML = `
+        <h2 class="welcome-title">Welcome to Floor ${info.floor}</h2>
+        <h3 class="welcome-floor">${info.name}</h3>
+        <p class="welcome-description">${info.description}</p>
+    `;
+    
+    modal.classList.add('active');
+    
+    // Close button handler
+    const closeBtn = document.getElementById('welcome-close');
+    closeBtn.onclick = () => {
+        modal.classList.remove('active');
+    };
+    
+    // Click outside to close
+    modal.onclick = (e) => {
+        if (e.target === modal) {
+            modal.classList.remove('active');
+        }
+    };
 }

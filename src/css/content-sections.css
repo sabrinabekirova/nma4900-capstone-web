@@ -10,12 +10,17 @@
 #about-section {
     background-color: transparent;
     color: var(--text-cream);
-    min-height: 100vh;
+    min-height: auto;
+    align-items: center;
+    padding-top: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
 }
 
 .content-section.dark {
     background-color: transparent;
     color: var(--text-cream);
+    min-height: auto;
+    align-items: flex-start;
 }
 
 #social-section {
@@ -80,17 +85,17 @@ h4 {
     align-items: center;
     justify-content: center;
     gap: 30px;
-    max-width: 1400px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 80px;
+    padding: 0;
 }
 
 /* Left Side: Description Panel */
 .description-panel {
     flex: 1;
     position: relative;
-    min-height: 600px;
+    min-height: 400px;
 }
 
 .description-content {
@@ -133,8 +138,10 @@ h4 {
     flex-direction: column;
     gap: 55px;
     flex-shrink: 0;
-    padding-top: 0;
+    padding-top: 150px;
     transform: translateX(-60px);
+    position: relative;
+    z-index: 10;
 }
 
 .floor-icons-vertical .key-item {

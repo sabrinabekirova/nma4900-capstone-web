@@ -177,3 +177,55 @@
     margin-bottom: var(--spacing-sm);
     color: #ffffff;
 }
+
+/* ===== WELCOME MODAL (Mobile/Tablet) ===== */
+.welcome-modal .welcome-content {
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Floor-specific welcome modal colors */
+.welcome-modal .welcome-content.floor-home {
+    background-color: rgba(219, 78, 53, 0.5);
+}
+
+.welcome-modal .welcome-content.floor-control {
+    background-color: rgba(226, 115, 73, 0.5);
+}
+
+.welcome-modal .welcome-content.floor-shift {
+    background-color: rgba(61, 137, 153, 0.5);
+}
+
+.welcome-modal .welcome-content.floor-return {
+    background-color: rgba(48, 109, 139, 0.5);
+}
+
+.welcome-body {
+    padding: var(--spacing-lg) var(--spacing-md);
+    color: #ffffff;
+}
+
+.welcome-title {
+    font-family: var(--font-primary);
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-sm);
+    color: #ffffff;
+}
+
+.welcome-floor {
+    font-family: var(--font-primary);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+    color: #ffffff;
+}
+
+.welcome-description {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+    color: #ffffff;
+    text-align: left;
+}

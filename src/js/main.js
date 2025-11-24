@@ -18,18 +18,22 @@ function initializePage1() {
             navigateToGallery(category);
         });
         
-        // Add hover listeners for description switching
+        // Add hover listeners for description switching (desktop only)
         item.addEventListener('mouseenter', () => {
-            const category = item.dataset.key;
-            switchDescription(category);
+            if (window.innerWidth > 968) {
+                const category = item.dataset.key;
+                switchDescription(category);
+            }
         });
     });
     
-    // Reset to exhibition description when mouse leaves the icons area
+    // Reset to exhibition description when mouse leaves the icons area (desktop only)
     const iconsContainer = document.querySelector('.floor-icons-vertical');
     if (iconsContainer) {
         iconsContainer.addEventListener('mouseleave', () => {
-            switchDescription('exhibition');
+            if (window.innerWidth > 968) {
+                switchDescription('exhibition');
+            }
         });
     }
     
@@ -43,12 +47,59 @@ function initializePage1() {
 
 // Initialize Page 2 (Gallery page)
 function initializePage2() {
-    // Navigation buttons
-    document.getElementById('restart-btn').addEventListener('click', restartExperience);
+    // Navigation buttons (desktop)
+    const restartBtn = document.getElementById('restart-btn');
+    if (restartBtn) restartBtn.addEventListener('click', restartExperience);
+    
     document.getElementById('home-nav-btn').addEventListener('click', () => navigateToGallery('home'));
     document.getElementById('control-nav-btn').addEventListener('click', () => navigateToGallery('control'));
     document.getElementById('shift-nav-btn').addEventListener('click', () => navigateToGallery('shift'));
     document.getElementById('return-nav-btn').addEventListener('click', () => navigateToGallery('return'));
+    
+    // Mobile navigation buttons
+    const homeBtnMobile = document.getElementById('home-nav-btn-mobile');
+    const controlBtnMobile = document.getElementById('control-nav-btn-mobile');
+    const shiftBtnMobile = document.getElementById('shift-nav-btn-mobile');
+    const returnBtnMobile = document.getElementById('return-nav-btn-mobile');
+    const restartBtnMobile = document.getElementById('restart-btn-mobile');
+    
+    if (homeBtnMobile) homeBtnMobile.addEventListener('click', () => {
+        navigateToGallery('home');
+        toggleMobileMenu();
+    });
+    if (controlBtnMobile) controlBtnMobile.addEventListener('click', () => {
+        navigateToGallery('control');
+        toggleMobileMenu();
+    });
+    if (shiftBtnMobile) shiftBtnMobile.addEventListener('click', () => {
+        navigateToGallery('shift');
+        toggleMobileMenu();
+    });
+    if (returnBtnMobile) returnBtnMobile.addEventListener('click', () => {
+        navigateToGallery('return');
+        toggleMobileMenu();
+    });
+    if (restartBtnMobile) restartBtnMobile.addEventListener('click', () => {
+        restartExperience();
+        toggleMobileMenu();
+    });
+    
+    // Hamburger menu toggle
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    if (hamburgerBtn) {
+        hamburgerBtn.addEventListener('click', toggleMobileMenu);
+    }
+}
+
+// Toggle mobile menu
+function toggleMobileMenu() {
+    const mobileMenu = document.getElementById('mobile-menu');
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    
+    if (mobileMenu && hamburgerBtn) {
+        mobileMenu.classList.toggle('active');
+        hamburgerBtn.classList.toggle('active');
+    }
 }
 
 // Initialize back to top button
