@@ -31,8 +31,8 @@ export function setupSlideAnimations() {
 // Track which section is currently in view
 function setupSectionTracking() {
     const trackingOptions = {
-        threshold: 0.5,
-        rootMargin: '0px'
+        threshold: 0.3,
+        rootMargin: '-20% 0px -20% 0px'
     };
     
     const trackingObserver = new IntersectionObserver((entries) => {
