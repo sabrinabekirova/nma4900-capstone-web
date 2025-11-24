@@ -135,11 +135,21 @@ async function initialize() {
     initializeModal();
     initializeBackToTop();
     
+    // Set initial history state for landing page
+    if (!window.location.hash) {
+        history.replaceState({ page: 'home' }, '', window.location.pathname);
+    }
+    
     // Restore page state from URL hash (if present)
     restorePageFromHash();
     
     // Handle browser back/forward buttons
     window.addEventListener('popstate', () => {
+        restorePageFromHash();
+    });
+
+    // Also handle manual hash changes (safety for hash-only navigation)
+    window.addEventListener('hashchange', () => {
         restorePageFromHash();
     });
     

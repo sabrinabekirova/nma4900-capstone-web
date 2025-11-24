@@ -3,7 +3,8 @@ import { floorColors } from './config.js';
 import { setCurrentPage, setCurrentFloor } from './state.js';
 import { populateGallery } from './gallery.js';
 
-export function navigateToGallery(category = null) {
+// Internal navigation (no history push)
+function navigateToGalleryInternal(category = null) {
     const page2 = document.getElementById('page2');
     
     // Hide page 1, show page 2
@@ -16,8 +17,6 @@ export function navigateToGallery(category = null) {
     // Set floor data attribute for theming
     if (category) {
         page2.setAttribute('data-floor', category);
-        // Update URL hash to preserve state on refresh
-        window.location.hash = category;
         // Update favicon for the floor
         updateFavicon(category);
         
@@ -27,7 +26,6 @@ export function navigateToGallery(category = null) {
         }
     } else {
         page2.removeAttribute('data-floor');
-        window.location.hash = 'gallery';
         updateFavicon(null);
     }
     
@@ -43,6 +41,17 @@ export function navigateToGallery(category = null) {
     setCurrentPage('page2');
 }
 
+export function navigateToGallery(category = null) {
+    // First update UI
+    navigateToGalleryInternal(category);
+    // Then push history entry
+    if (category) {
+        history.pushState({ page: 'gallery', floor: category }, '', `#${category}`);
+    } else {
+        history.pushState({ page: 'gallery', floor: null }, '', '#gallery');
+    }
+}
+
 export function updateNavBarColors(category) {
     const nav = document.querySelector('.gallery-nav');
     
@@ -53,13 +62,11 @@ export function updateNavBarColors(category) {
     }
 }
 
-export function navigateToHome() {
+// Internal navigation (no history push)
+function navigateToHomeInternal() {
     // Show page 1, hide page 2
     document.getElementById('page2').classList.remove('active');
     document.getElementById('page1').classList.add('active');
-    
-    // Clear URL hash
-    window.location.hash = '';
     
     // Reset favicon to main
     updateFavicon(null);
@@ -68,6 +75,13 @@ export function navigateToHome() {
     window.scrollTo(0, 0);
     
     setCurrentPage('page1');
+}
+
+export function navigateToHome() {
+    // First update UI
+    navigateToHomeInternal();
+    // Then push history entry (clear hash)
+    history.pushState({ page: 'home' }, '', window.location.pathname);
 }
 
 export function restartExperience() {
@@ -80,13 +94,15 @@ export function restorePageFromHash() {
     const hash = window.location.hash.substring(1); // Remove the # symbol
     
     if (hash && (hash === 'home' || hash === 'control' || hash === 'shift' || hash === 'return')) {
-        // Navigate to the floor page
-        navigateToGallery(hash);
+        // Navigate to the floor page without pushing to history
+        navigateToGalleryInternal(hash);
     } else if (hash === 'gallery') {
-        // Navigate to gallery without specific floor
-        navigateToGallery(null);
+        // Navigate to gallery without specific floor (no history push)
+        navigateToGalleryInternal(null);
+    } else {
+        // No hash or invalid hash: go to landing (no history push)
+        navigateToHomeInternal();
     }
-    // If no hash or invalid hash, stay on landing page (default)
 }
 
 // Update favicon based on floor
