@@ -120,13 +120,15 @@ function displayArtwork(artwork) {
             </div>`;
         } else {
             // Generic iframe for other URLs (like p5.js)
-            mediaHTML = `<div class="modal-media-container">
+            mediaHTML = `<div class="modal-media-container interactive-project-container">
                 <iframe class="modal-media modal-iframe" 
                     src="${artwork.video_url}" 
                     frameborder="0" 
                     allowfullscreen>
                 </iframe>
-            </div>`;
+                <a href="${artwork.video_url}" target="_blank" class="iframe-overlay-link" title="Open in new tab"></a>
+            </div>
+            <a href="${artwork.video_url}" target="_blank" class="interactive-project-link">Open Interactive Project in New Tab →</a>`;
         }
     } else if (artwork.type === 'video') {
         mediaHTML = `<video class="modal-media" controls autoplay loop>
