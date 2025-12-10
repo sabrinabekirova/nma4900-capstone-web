@@ -81,7 +81,32 @@ function displayArtwork(artwork) {
     
     // Create modal content
     let mediaHTML;
-    if (artwork.video_url) {
+    
+    // Check if artwork has multiple images (carousel)
+    if (artwork.images && artwork.images.length > 0) {
+        mediaHTML = `<div class="carousel-container">
+            <div class="carousel-slide active">
+                <img class="modal-media" src="${artwork.images[0]}" alt="${artwork.title} - Image 1">
+            </div>`;
+        
+        for (let i = 1; i < artwork.images.length; i++) {
+            mediaHTML += `<div class="carousel-slide">
+                <img class="modal-media" src="${artwork.images[i]}" alt="${artwork.title} - Image ${i + 1}">
+            </div>`;
+        }
+        
+        mediaHTML += `
+            <button class="carousel-prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="carousel-next" onclick="changeSlide(1)">&#10095;</button>
+            <div class="carousel-dots">`;
+        
+        for (let i = 0; i < artwork.images.length; i++) {
+            mediaHTML += `<span class="carousel-dot ${i === 0 ? 'active' : ''}" onclick="currentSlide(${i + 1})"></span>`;
+        }
+        
+        mediaHTML += `</div>
+        </div>`;
+    } else if (artwork.video_url) {
         // Check if it's a Vimeo URL
         if (artwork.video_url.includes('vimeo.com')) {
             const vimeoId = artwork.video_url.split('/').pop().split('?')[0];
@@ -124,8 +149,25 @@ function displayArtwork(artwork) {
         }
     }
     
+    let pdfHTML = '';
+    if (artwork.pdf_url) {
+        pdfHTML = `
+        <div class="modal-pdf-section">
+            <h3>Accompanying Zine</h3>
+            <div class="modal-pdf-container">
+                <object class="modal-pdf" 
+                    data="${artwork.pdf_url}" 
+                    type="application/pdf">
+                    <p style="color: white; text-align: center; padding: 20px;">PDF cannot be displayed in browser. Please use the link below to download and view.</p>
+                </object>
+            </div>
+            <a href="${artwork.pdf_url}" download target="_blank" class="pdf-download-link">Download PDF</a>
+        </div>`;
+    }
+    
     modalBody.innerHTML = `
         ${mediaHTML}
+        ${pdfHTML}
         <h2 class="modal-title">${artwork.title}</h2>
         <p class="modal-artist">by ${artwork.artist}</p>
         ${technicalInfo ? `<p class="modal-technical">${technicalInfo}</p>` : ''}
@@ -181,5 +223,39 @@ export function closeModal() {
     const video = modal.querySelector('video');
     if (video) {
         video.pause();
+        video.currentTime = 0;
     }
+    
+    // Stop all iframes (Vimeo, p5.js, etc.) by removing and re-adding them
+    const iframes = modal.querySelectorAll('iframe');
+    iframes.forEach(iframe => {
+        iframe.src = '';
+    });
+}
+
+// ===== CAROUSEL FUNCTIONALITY =====
+let currentSlideIndex = 1;
+
+window.changeSlide = function(n) {
+    showSlides(currentSlideIndex += n);
+}
+
+window.currentSlide = function(n) {
+    showSlides(currentSlideIndex = n);
+}
+
+function showSlides(n) {
+    const slides = document.querySelectorAll('.carousel-slide');
+    const dots = document.querySelectorAll('.carousel-dot');
+    
+    if (slides.length === 0) return;
+    
+    if (n > slides.length) { currentSlideIndex = 1; }
+    if (n < 1) { currentSlideIndex = slides.length; }
+    
+    slides.forEach(slide => slide.classList.remove('active'));
+    dots.forEach(dot => dot.classList.remove('active'));
+    
+    slides[currentSlideIndex - 1].classList.add('active');
+    dots[currentSlideIndex - 1].classList.add('active');
 }

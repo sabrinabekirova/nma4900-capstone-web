@@ -28,7 +28,9 @@ export async function loadArtworksFromJSON() {
                         medium: artist.medium,
                         running_time: artist.running_time,
                         dimensions: artist.dimensions,
-                        video_url: artist.video_url
+                        video_url: artist.video_url,
+                        images: artist.images,
+                        pdf_url: artist.pdf_url
                     });
                 });
             });
