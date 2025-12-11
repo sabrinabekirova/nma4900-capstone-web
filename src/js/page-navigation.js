@@ -3,125 +3,50 @@ import { floorColors } from './config.js';
 import { setCurrentPage, setCurrentFloor } from './state.js';
 import { populateGallery } from './gallery.js';
 
-// Internal navigation (no history push)
-function navigateToGalleryInternal(category = null) {
-    const page2 = document.getElementById('page2');
+// Get current floor from page filename or data attribute
+export function getCurrentFloor() {
+    const path = window.location.pathname;
+    const filename = path.split('/').pop();
     
-    // Hide page 1, show page 2
-    document.getElementById('page1').classList.remove('active');
-    page2.classList.add('active');
+    if (filename === 'home.html') return 'home';
+    if (filename === 'control.html') return 'control';
+    if (filename === 'shift.html') return 'shift';
+    if (filename === 'return.html') return 'return';
     
-    // Update current floor
-    setCurrentFloor(category);
-    
-    // Set floor data attribute for theming
-    if (category) {
-        page2.setAttribute('data-floor', category);
-        // Update favicon for the floor
-        updateFavicon(category);
-        
-        // Show welcome modal on mobile/tablet
-        if (window.innerWidth <= 968) {
-            showWelcomeModal(category);
-        }
-    } else {
-        page2.removeAttribute('data-floor');
-        updateFavicon(null);
+    // Also check body data-floor attribute
+    const body = document.body;
+    if (body && body.dataset.floor) {
+        return body.dataset.floor;
     }
     
-    // Update nav bar colors
-    updateNavBarColors(category);
-    
-    // Populate gallery
-    populateGallery(category);
-    
-    // Scroll to top
-    window.scrollTo(0, 0);
-    
-    setCurrentPage('page2');
+    return null;
 }
 
-export function navigateToGallery(category = null) {
-    // First update UI
-    navigateToGalleryInternal(category);
-    // Then push history entry
+// Navigate to a gallery page by redirecting to the HTML file
+export function navigateToGallery(category) {
     if (category) {
-        history.pushState({ page: 'gallery', floor: category }, '', `#${category}`);
-    } else {
-        history.pushState({ page: 'gallery', floor: null }, '', '#gallery');
+        window.location.href = `${category}.html`;
     }
 }
 
 export function updateNavBarColors(category) {
     const nav = document.querySelector('.gallery-nav');
     
-    if (category && floorColors[category]) {
+    if (nav && category && floorColors[category]) {
         nav.style.background = floorColors[category];
-    } else {
+    } else if (nav) {
         nav.style.background = 'var(--teal)';
     }
 }
 
-// Internal navigation (no history push)
-function navigateToHomeInternal() {
-    // Show page 1, hide page 2
-    document.getElementById('page2').classList.remove('active');
-    document.getElementById('page1').classList.add('active');
-    
-    // Reset favicon to main
-    updateFavicon(null);
-    
-    // Scroll to top
-    window.scrollTo(0, 0);
-    
-    setCurrentPage('page1');
-}
-
+// Navigate to home/landing page
 export function navigateToHome() {
-    // First update UI
-    navigateToHomeInternal();
-    // Then push history entry (clear hash)
-    history.pushState({ page: 'home' }, '', window.location.pathname);
+    window.location.href = 'index.html';
 }
 
 export function restartExperience() {
     console.log('🔄 Restarting experience...');
     navigateToHome();
-}
-
-// Restore page state from URL hash
-export function restorePageFromHash() {
-    const hash = window.location.hash.substring(1); // Remove the # symbol
-    
-    if (hash && (hash === 'home' || hash === 'control' || hash === 'shift' || hash === 'return')) {
-        // Navigate to the floor page without pushing to history
-        navigateToGalleryInternal(hash);
-    } else if (hash === 'gallery') {
-        // Navigate to gallery without specific floor (no history push)
-        navigateToGalleryInternal(null);
-    } else {
-        // No hash or invalid hash: go to landing (no history push)
-        navigateToHomeInternal();
-    }
-}
-
-// Update favicon based on floor
-export function updateFavicon(floor) {
-    const favicon = document.getElementById('favicon');
-    if (!favicon) return;
-    
-    if (floor === 'home') {
-        favicon.href = 'assets/home-icon.svg';
-    } else if (floor === 'control') {
-        favicon.href = 'assets/control-icon.svg';
-    } else if (floor === 'shift') {
-        favicon.href = 'assets/shift-icon.svg';
-    } else if (floor === 'return') {
-        favicon.href = 'assets/return-icon.svg';
-    } else {
-        // Default to main favicon
-        favicon.href = 'assets/favicon-main.svg';
-    }
 }
 
 // Description switching for floor icons

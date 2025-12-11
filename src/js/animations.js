@@ -1,7 +1,7 @@
-// ===== ANIMATIONS & SCROLL FUNCTIONALITY =====
+//ANIMATIONS & SCROLL FUNCTIONALITY
 import { sections, currentSectionIndex, setCurrentSectionIndex, currentPage } from './state.js';
 
-// Setup slide animations for page 1 sections
+//slide animations for page 1 sections
 export function setupSlideAnimations() {
     // Skip the logo section (first section)
     const animatedSections = Array.from(document.querySelectorAll('#page1 section')).slice(1);
@@ -70,7 +70,6 @@ export function handleKeyboardNavigation(e) {
         return;
     }
     
-    // Don't handle keyboard if user is typing in an input
     if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
         return;
     }

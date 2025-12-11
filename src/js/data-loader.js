@@ -1,4 +1,4 @@
-// ===== DATA LOADING FROM JSON =====
+//DATA LOADING FROM JSON
 import { artworks, setArtworks } from './state.js';
 
 export async function loadArtworksFromJSON() {
@@ -52,13 +52,13 @@ export async function loadArtworksFromJSON() {
 }
 
 function updateExhibitionInfo(exhibitionData) {
-    // Update about text
+    // about text
     const aboutSection = document.querySelector('#about-section p');
     if (aboutSection && exhibitionData.about) {
         aboutSection.textContent = exhibitionData.about;
     }
     
-    // Update visit information
+    // visit information
     if (exhibitionData.location) {
         const visitInfo = document.querySelector('.visit-info');
         if (visitInfo) {
@@ -70,8 +70,7 @@ function updateExhibitionInfo(exhibitionData) {
             `;
         }
     }
-    
-    // Update social links
+
     if (exhibitionData.social) {
         const socialLinks = document.querySelectorAll('.social-link');
         const socialUrls = [

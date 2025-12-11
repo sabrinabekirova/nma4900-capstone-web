@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return - Press Any Key To Continue</title>
+    <link rel="icon" type="image/svg+xml" href="assets/return-icon.svg" id="favicon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-floor="return">
+    <!-- Gallery Page -->
+    <div id="page2" class="page active" data-floor="return">
+        <!-- Navigation Bar -->
+        <nav class="gallery-nav">
+            <div class="nav-left">
+                <button class="hamburger-btn" id="hamburger-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <button class="nav-btn nav-desktop" id="restart-btn">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="nav-right nav-desktop">
+                <button class="nav-btn" id="home-nav-btn">
+                    <img src="assets/home-icon.svg" alt="Home" class="nav-icon">
+                </button>
+                <button class="nav-btn" id="control-nav-btn">
+                    <img src="assets/control-icon.svg" alt="Control" class="nav-icon">
+                </button>
+                <button class="nav-btn" id="shift-nav-btn">
+                    <img src="assets/shift-icon.svg" alt="Shift" class="nav-icon">
+                </button>
+                <button class="nav-btn active" id="return-nav-btn">
+                    <img src="assets/return-icon.svg" alt="Return" class="nav-icon">
+                </button>
+            </div>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <button class="nav-btn" id="home-nav-btn-mobile">
+                <img src="assets/home-icon.svg" alt="Home" class="nav-icon">
+            </button>
+            <button class="nav-btn" id="control-nav-btn-mobile">
+                <img src="assets/control-icon.svg" alt="Control" class="nav-icon">
+            </button>
+            <button class="nav-btn" id="shift-nav-btn-mobile">
+                <img src="assets/shift-icon.svg" alt="Shift" class="nav-icon">
+            </button>
+            <button class="nav-btn active" id="return-nav-btn-mobile">
+                <img src="assets/return-icon.svg" alt="Return" class="nav-icon">
+            </button>
+            <button class="nav-btn" id="restart-btn-mobile">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-container">
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Gallery items will be dynamically populated -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="artwork-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <button class="modal-nav modal-prev" id="modal-prev" title="Previous artwork">
+                <svg viewBox="0 0 24 24" width="32" height="32">
+                    <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" fill="none"/>
+                </svg>
+            </button>
+            <button class="modal-nav modal-next" id="modal-next" title="Next artwork">
+                <svg viewBox="0 0 24 24" width="32" height="32">
+                    <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" fill="none"/>
+                </svg>
+            </button>
+            <div class="modal-body" id="modal-body">
+                <!-- Content will be dynamically populated -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Welcome Modal (for mobile/tablet) -->
+    <div id="welcome-modal" class="modal welcome-modal">
+        <div class="modal-content welcome-content">
+            <button class="modal-close" id="welcome-close">&times;</button>
+            <div class="welcome-body" id="welcome-body">
+                <!-- Content will be dynamically populated -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Return to Top Button -->
+    <button id="back-to-top" class="back-to-top" title="Back to top">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+            <path d="M7 14l5-5 5 5z" fill="currentColor"/>
+        </svg>
+    </button>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>

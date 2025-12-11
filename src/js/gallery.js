@@ -1,4 +1,4 @@
-// ===== GALLERY FUNCTIONALITY =====
+//GALLERY FUNCTIONALIT
 import { artworks } from './state.js';
 import { openModal } from './modal.js';
 

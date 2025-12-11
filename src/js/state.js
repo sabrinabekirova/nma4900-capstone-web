@@ -1,4 +1,4 @@
-// ===== STATE MANAGEMENT =====
+//STATE MANAGEMENT
 
 // Gallery data
 export let artworks = [];

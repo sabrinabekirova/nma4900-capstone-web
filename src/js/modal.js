@@ -1,4 +1,4 @@
-// ===== MODAL FUNCTIONALITY =====
+//MODAL FUNCTIONALITY
 import { floorModalColors } from './config.js';
 import { currentFloor, artworks } from './state.js';
 

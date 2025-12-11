@@ -3,7 +3,6 @@
 #page2 {
     transition: background 0.5s ease;
     min-height: 100vh;
-    overflow: hidden;
 }
 
 #page2[data-floor="home"] {
@@ -104,6 +103,23 @@
     align-items: center;
     z-index: 1000;
     height: 45px;
+}
+
+/* Floor-specific nav bar colors */
+body[data-floor="home"] .gallery-nav {
+    background: #db4e35;
+}
+
+body[data-floor="control"] .gallery-nav {
+    background: #e27349;
+}
+
+body[data-floor="shift"] .gallery-nav {
+    background: #3d8999;
+}
+
+body[data-floor="return"] .gallery-nav {
+    background: #306d8b;
 }
 
 .nav-left {
@@ -241,10 +257,11 @@
 .gallery-container {
     margin-top: 45px;
     padding: var(--spacing-md);
-    height: calc(100vh - 45px);
+    min-height: calc(100vh - 45px);
     display: flex;
     align-items: center;
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
     position: relative;
     z-index: 1;
 }

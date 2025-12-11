@@ -1,15 +1,18 @@
 // ===== MAIN INITIALIZATION =====
 import { USE_JSON_FILE } from './config.js';
-import { setSections } from './state.js';
+import { setSections, setCurrentFloor, setCurrentPage } from './state.js';
 import { loadArtworksFromJSON } from './data-loader.js';
-import { navigateToGallery, restartExperience, switchDescription, restorePageFromHash } from './page-navigation.js';
+import { navigateToGallery, restartExperience, switchDescription, getCurrentFloor, updateNavBarColors, showWelcomeModal } from './page-navigation.js';
 import { initializeModal } from './modal.js';
 import { setupSlideAnimations, handleKeyboardNavigation, setupGalleryAccessibility } from './animations.js';
+import { populateGallery } from './gallery.js';
 
 // Initialize Page 1 (Landing page)
 function initializePage1() {
+    
     // Setup key card click listeners
     const keyItems = document.querySelectorAll('.key-item');
+    console.log('Found', keyItems.length, 'key items');
     
     keyItems.forEach(item => {
         item.addEventListener('click', () => {
@@ -47,14 +50,36 @@ function initializePage1() {
 
 // Initialize Page 2 (Gallery page)
 function initializePage2() {
+    // Get current floor
+    const currentFloor = getCurrentFloor();
+    if (currentFloor) {
+        setCurrentFloor(currentFloor);
+        
+        // Update nav bar colors
+        updateNavBarColors(currentFloor);
+        
+        // Populate gallery with floor-specific artworks
+        populateGallery(currentFloor);
+        
+        // Show welcome modal on mobile/tablet
+        if (window.innerWidth <= 968) {
+            showWelcomeModal(currentFloor);
+        }
+    }
+    
     // Navigation buttons (desktop)
     const restartBtn = document.getElementById('restart-btn');
     if (restartBtn) restartBtn.addEventListener('click', restartExperience);
     
-    document.getElementById('home-nav-btn').addEventListener('click', () => navigateToGallery('home'));
-    document.getElementById('control-nav-btn').addEventListener('click', () => navigateToGallery('control'));
-    document.getElementById('shift-nav-btn').addEventListener('click', () => navigateToGallery('shift'));
-    document.getElementById('return-nav-btn').addEventListener('click', () => navigateToGallery('return'));
+    const homeBtn = document.getElementById('home-nav-btn');
+    const controlBtn = document.getElementById('control-nav-btn');
+    const shiftBtn = document.getElementById('shift-nav-btn');
+    const returnBtn = document.getElementById('return-nav-btn');
+    
+    if (homeBtn) homeBtn.addEventListener('click', () => navigateToGallery('home'));
+    if (controlBtn) controlBtn.addEventListener('click', () => navigateToGallery('control'));
+    if (shiftBtn) shiftBtn.addEventListener('click', () => navigateToGallery('shift'));
+    if (returnBtn) returnBtn.addEventListener('click', () => navigateToGallery('return'));
     
     // Mobile navigation buttons
     const homeBtnMobile = document.getElementById('home-nav-btn-mobile');
@@ -130,28 +155,30 @@ async function initialize() {
         await loadArtworksFromJSON();
     }
     
-    initializePage1();
-    initializePage2();
-    initializeModal();
-    initializeBackToTop();
+    // Detect which page we're on
+    const isLandingPage = document.getElementById('page1') !== null;
+    const isGalleryPage = document.getElementById('page2') !== null;
     
-    // Set initial history state for landing page
-    if (!window.location.hash) {
-        history.replaceState({ page: 'home' }, '', window.location.pathname);
+    console.log('🔍 Page detection:', { isLandingPage, isGalleryPage });
+    
+    if (isLandingPage) {
+        console.log('✅ Landing page detected');
+        setCurrentPage('page1');
+        initializePage1();
     }
     
-    // Restore page state from URL hash (if present)
-    restorePageFromHash();
+    if (isGalleryPage && !isLandingPage) {
+        // We're on a standalone gallery page (home.html, control.html, etc.)
+        setCurrentPage('page2');
+        initializePage2();
+        initializeModal();
+    } else if (isGalleryPage && isLandingPage) {
+        // Both pages exist (legacy single-page setup) - initialize both
+        initializePage2();
+        initializeModal();
+    }
     
-    // Handle browser back/forward buttons
-    window.addEventListener('popstate', () => {
-        restorePageFromHash();
-    });
-
-    // Also handle manual hash changes (safety for hash-only navigation)
-    window.addEventListener('hashchange', () => {
-        restorePageFromHash();
-    });
+    initializeBackToTop();
     
     // Setup keyboard navigation
     document.addEventListener('keydown', handleKeyboardNavigation);
